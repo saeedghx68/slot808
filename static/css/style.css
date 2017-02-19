@@ -235,7 +235,6 @@ body{
 
 #pass1 , #pass2, #oldPass{
     padding: 0 !important;
-    background-color: #fdfdfd;
 }
 
 #pass1 input , #pass2 input, #oldPass input{
@@ -473,6 +472,7 @@ body{
     background-color: #151515 !important;
     padding: 0 6px !important;
     overflow: hidden;
+    position: relative;
 }
 
 .box-number:after {
@@ -481,7 +481,8 @@ body{
     height: 140px;
     width: 350px;
     position: absolute;
-    top: 140.5px;
+    top: 0;
+    left: 4px;
     border-radius: 3px;
 }
 
@@ -676,7 +677,6 @@ body{
     .box-number:after {
         height: 100px;
         width: 272px;
-        top: 127.5px;
     }
 
     .reel-symbol{
@@ -760,7 +760,6 @@ body{
     .box-number:after {
         height: 100px;
         width: 272px;
-        top: 127.5px;
     }
 
     .reel-symbol{
@@ -843,7 +842,6 @@ body{
     .box-number:after {
         height: 100px;
         width: 272px;
-        top: 127.5px;
     }
 
     .reel-symbol{
@@ -926,7 +924,6 @@ body{
     .box-number:after {
         height: 50px;
         width: 139px;
-        top: 94.5px;
         border-radius: 0;
         box-shadow: inset 0px 10px 35px -10px rgba(64, 64, 64, 0.5), inset 0px -10px 35px -10px rgba(64, 64, 64, 0.5) !important;
     }
