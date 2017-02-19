@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+    صفحه شخصی
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col-md-6" style="margin: auto;float: right;" id="right-box">
+
+          <div class="box box-primary" id="lottery">
+
+            <div class="row">
+             <div class="lottery-title">
+               <div>
+                 <h1>Lottery Title</h1></div></div>
+              <div class="slot" style="margin-top:0;">
+                <div class="box-number">
+                  <div class="box box-primary number"></div>
+
+                  <div class="box box-primary number"></div>
+
+                  <div class="box box-primary number"></div>
+                </div>
+              </div>
+            <form action="." method="get">
+              <input type="hidden" name="status_check" />
+              <input type="submit" name="spin" id="spin" class="btn btn-primary btn-block spin" style="font-size:14pt;width: 100px;transition: all ease 0.4s;font-weight: bold;" value="spin">
+             </form>
+             <p id="msg" style="font-size: 18px;font-weight: bold; text-align: left; margin:25px 0 0 14%;transition: all ease 0.4s;"></p>
+
+            </div>
+
+            <div class="col-xs-12">
+              <div class="box" style="width: 82%;margin: 20px auto 0;height: 75px;">
+                <div class="box-body table-responsive no-padding" style="font-size: 14px;width: 100%; margin-top: 0;">
+                  <table class="table table-hover">
+                    <tbody>
+                      <tr>
+                        <th>LAST WIN</th>
+                        <th>TOTAL SPINS</th>
+                        <th>TOTAL SCORES</th>
+                      </tr>
+                      <tr>
+                        <td><span class="badge bg-green">0</span></td>
+                        <td><span class="badge bg-yellow">{{ user.total_spin }}</span></td>
+                        <td><span class="badge bg-red">{{ user.score }}</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="nav-tabs-custom">
+            <div class="box-header with-border" id="description">
+              <h3 class="box-title" style="font-size: 30px;">About Lottery</h3>
+            </div>
+            <div class="tab-content" style="text-align: right; direction:rtl;">
+              <div class="active tab-pane" id="activity">
+
+                <div class="post">
+                  <h1 style="font-size:16px;color: #ca2626;font-weight: bold;">Guidance</h1>
+                  <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                  </p>
+                </div>
+
+                <h1 style="font-size:16px;color: #ca2626;font-weight: bold;">Scores</h1>
+
+                <p>
+                    Lorem ipsum represents a long-held tradition for designers,
+                    typographers and the like. Some people hate it and argue for
+                    its demise, but others ignore the hate as they create awesome
+                    tools to help create filler text for everyone from bacon lovers
+                    to Charlie Sheen fans.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    var first_wheel = '{{ firstWheel }}';
+    var second_wheel = '{{ secondWheel }}';
+    var third_wheel = '{{ thirdWheel }}';
+    var msg = '{{ message }}';
+</script>
+<script src="{% static 'js/slot.js' %}"></script>
+{% endblock %}

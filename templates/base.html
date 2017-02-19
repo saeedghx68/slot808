@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% block title %}{% endblock %}</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/Admin.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+<div class="wrapper">
+  <aside class="main-sidebar" style="right: 0;padding-top: 0;left: auto;">
+      <header class="main-header">
+        <a href="/profile/" class="logo" style="background-color: #a91b1b;color:#fff;">
+            <span class="logo-lg">User Profile</span>
+        </a>
+      </header>
+
+      <section class="sidebar">
+        <div class="user-panel">
+          <div class="outer">
+            <img class="profile-user-img img-responsive img-circle" src="/media/{{ user.img }}" alt="User profile picture">
+          </div>
+          <div class="setting-outer" style="left: 10%; right: auto;">
+            <div class="img-circle setting-div">
+              <a href="/changePass/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="change password">
+              <i class="fa fa-gears" style="color: white; margin: 2px;"></i></a></div>
+          </div>
+          <div class="setting-outer">
+            <div class="img-circle setting-div">
+              <a href="/logout/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="exit">
+              <i class="fa fa-sign-out" aria-hidden="true" style="color: white; margin: 3px 5px;"></i></a></div>
+          </div>
+          <div class="pull-left info">
+            <p style="word-wrap: break-word;white-space: normal;">{{ user.first_name }} {{ user.last_name }}</p>
+          </div>
+        </div>
+      </section>
+  </aside>
+
+  <div class="content-wrapper" style="margin-right: 230px;margin-left:0;">
+    <section class="content">
+        {% block content %}
+        {% endblock %}
+    </section>
+  </div>
+</div>
+
+<script src="{% static 'js/jQuery/jquery-2.2.3.min.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/app.min.js' %}"></script>
+{% block scripts %}
+{% endblock %}
+
+</body>
+</html>

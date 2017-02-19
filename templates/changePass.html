@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+    تغییر پسورد
+{% endblock %}
+
+{% block content %}
+      <div class="row">
+        <div class="col-md-5" style="float: none;margin:10% auto;">
+          <div class="box-info" id="changePassBox">
+            <form action="" method="post" name="changePassForm" class="form-horizontal" style="padding:25px 40px;">
+              {% csrf_token %}
+              <div class="box-body" style="font-size:14px;">
+                <div>
+
+                  <div class="col-sm-12" id="oldPass">
+                    <input type="text" class="form-control" name="oldPass" placeholder="رمز عبور قبلی">
+                  </div>
+
+                  <div class="col-sm-12" id="pass1">
+                    <input type="text" class="form-control" name="pass1" placeholder="رمز عبور جدید">
+                  </div>
+
+                  <div class="col-sm-12" id="pass2">
+                    <input type="text" class="form-control" name="pass2" placeholder="تکرار رمز جدید">
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-info pull-right" style="width:auto;margin:auto;">اعمال تغییر</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+{% endblock %}

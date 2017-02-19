@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login page</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+</head>
+
+<body>
+
+    <div class="l-container">
+
+        <div class="legend">Login</div>
+        <div class="login-page">
+          <div class="l-form">
+
+            <form action="" method="post" name="ForgetForm" class="forget-form">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="forget" />
+                <p>لطفا ایمیل خود را برای بازیابی رمز عبور وارد کنید </p>
+                <div class="input">
+                    <input type="text" placeholder="ایمیل"/>
+                    <span style="opacity: 1;"><i class="fa fa-envelope-o fa-fw"></i></span>
+                </div>
+                <p style="text-align: right;color:red;"></p>
+                <input type="submit" name="forget" class="button default l-form-button" value="ارسال">
+                <p class="cta"><a href="#" style="display:inline-block;">ورود</a></p>
+            </form>
+
+              <p>{{ message1 }} {{ message2 }}</p>
+              <form action="" method="post" name="LoginForm" class="login-form">
+                {% csrf_token %}
+                <input type="hidden" name="next" value="login" />
+                <div class="input">
+                    <input type="text" name="username" placeholder="نام کاربری"/>
+                  <span style="opacity: 1;left: 5px;"><i class="fa fa-user fa-fw"></i></span>
+                </div>
+                <div class="input">
+                  <input type="password" name="password" placeholder="رمز عبور"/>
+                  <span style="opacity: 1;"><i class="fa fa-lock"></i></span>
+                </div>
+                <p style="text-align: right;color:red;"></p>
+                <input type="submit" name="login" class="button default l-form-button" value="ورود">
+                <p class="cta" style="margin-bottom:20px;"><a href="#">فراموشی رمز عبور</a></p>
+            </form>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+    </div>
+
+</body>
+<script src="{% static 'js/jQuery/jquery-2.2.3.min.js' %}"></script>
+
+<script>
+
+jQuery(document).ready(function($) {
+	$('.cta a').click(function(){
+		$('.l-form form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
+
+	$( ".input" ).focusin(function() {
+      $( this ).find( "span" ).animate({"opacity":"0"}, 200);
+    });
+
+    $( ".input" ).focusout(function() {
+      $( this ).find( "span" ).animate({"opacity":"1"}, 300);
+    });
+});
+
+</script>
+
+</html>
