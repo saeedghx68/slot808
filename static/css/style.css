@@ -34,7 +34,7 @@ body{
     width: 90% !important;
     margin: auto !important;
     background-color: white !important;
-    border-top: 3px solid #ca2626 !important;
+    border-top: 3px solid #1d1919 !important;
     border-radius: 3px !important;
 }
 
@@ -201,14 +201,14 @@ body{
 .l-form input:focus, .form-horizontal input:focus{
     padding: 6px 10px 6px 15px;
     outline: 0;
-    border-color: #ca2626;
+    border-color: #d6e221;
 }
 
 .l-form-button, .form-horizontal button {
     padding: 10px 15px !important;
-    border: 1px solid #ca2626 !important;
-    color: #fff;
-    background: #ca2626 !important;
+    border: 1px solid #ccc !important;
+    color: #000;
+    background: #f4ff4f !important;
     font-size: 15px !important;
     outline: 0;
     width: 100%;
@@ -224,9 +224,9 @@ body{
  .form-horizontal button:hover, .form-horizontal button:active,
   .form-horizontal button:focus {
     /* border-color:#9fd1c6 or #ca2626 !important;  or #33b5e5  or #30bbbb*/
-    border-color: #ad1c1c !important;
+    border-color: #aaa !important;
     text-shadow: none !important;
-    background-color: #ad1c1c !important;
+    background-color: #e5ef5c !important;
 }
 
 .form-horizontal input{
@@ -264,7 +264,7 @@ body{
     /* border-radius: 10px 10px 0 0;
     background: #e53333;
     */
-    background: #ca2626 !important;
+    background: #000 !important;
     padding: 8px 20px;
     color: #fff;
     font-size: 20px;
@@ -273,7 +273,7 @@ body{
 
 .legend:after {
     content: "";
-    background-image: url(../img/multy-user.png);
+    background-image: url(../img/multy-user2.png);
     background-size: 100px 100px;
     background-repeat: no-repeat;
     background-position: 90% -16px;
@@ -299,7 +299,7 @@ body{
 }
 
 .main-sidebar{
-    background-color: #ca2626 !important;
+    background-color: #1d1919 !important;
 }
 
 .sidebar {
@@ -438,15 +438,21 @@ body{
     width: 386px;
     height: 90px;
     margin: 40px auto 0 auto;
-    background-color: #9c1919;
+    background-color: #f4ff4f;
     border-radius: 50% 50% 0 0;
     text-align: center;
     border: 3px solid #ccc;
     border-bottom: 0;
     color: white;
+    -webkit-box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
+    box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
 }
 
 .lottery-title > div{
+    background: url(/static/bg10.jpg);
+    background-size: cover;
+    background-position: 0 -15px;
     width: 360px;
     height: 76px;
     padding-top: 1px;
@@ -454,17 +460,26 @@ body{
     bottom: 0px;
     margin: 10px;
     border-radius: 50% 50% 3px 3px;
-    background-color: #610000;
+    background-color: #1d1919;
+}
+
+.lottery-title h1{
+    font-weight: bolder;
+    text-shadow: 0 1px 0 #7a8032, 0 1px 0 #7a8032, 0 3px 0 #7a8032, 0 2px 0 #7a8032, 0 1px 0 #7a8032, 0 2px 1px rgba(0,0,0,.1), 0 0 3px rgba(0,0,0,.1), 0 1px 2px rgba(0,0,0,.3), 0 2px 3px rgba(0,0,0,.2), 0 4px 8px rgba(0,0,0,.25), 0 8px 9px rgba(0,0,0,.2), 0 19px 19px rgba(0,0,0,.15);
+    color: #f4ff4f;
 }
 
 .slot{
     margin: 20px auto;
     width: 386px !important;
     border-radius: 0 0 5px 5px !important;
-    background-color: #9c1919 !important;
+    background-color: #f4ff4f !important;
     padding: 11px !important;
     border: 3px solid #ccc;
     border-top: 0;
+    -webkit-box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
+    -moz-box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
+    box-shadow: inset 0px 0px 3px 5px rgba(0,0,0,0.12);
 }
 
 .box-number{
@@ -489,6 +504,14 @@ body{
 .number{
     background-color: #ecf0f5;
     border-top: 0px;
+    color: black;
+    font-size: 80px;
+    line-height: 1.7;
+    width: 108px;
+    height: 140px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
 }
 
 .btn-block{
@@ -500,7 +523,7 @@ body{
 
 #description{
     text-align: center;
-    border-top:3px solid #ca2626;
+    border-top:3px solid #1d1919;
     border-radius: 3px;
 }
 
@@ -509,7 +532,7 @@ body{
     height: auto;
     padding-bottom: 40px;
     margin: 0;
-    border-top: 3px solid #ca2626;
+    border-top: 3px solid #1d1919;
     border-radius: 3px !important;
 }
 
@@ -786,6 +809,10 @@ body{
         right: 25% !important;
     }
 
+    #setting{
+        left: 25% !important;
+    }
+
     .content-wrapper{
         margin-right: 0 !important;
         margin-top: 350px !important;
@@ -866,6 +893,10 @@ body{
 
     .setting-outer{
         right: 10% !important;
+    }
+
+    #setting{
+        left: 25% !important;
     }
 
     .content-wrapper{

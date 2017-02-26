@@ -17,10 +17,18 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from myapp import views
 
+from django.contrib import admin
+from adminplus.sites import AdminSitePlus
+
+admin.site = AdminSitePlus()
+admin.autodiscover()
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^profile/$', views.profile, name='profile'),
-    url(r'^login/$', views.login, name='login'),
-    url(r'^logout/$', views.logout, name='logout'),
+    url(r'^get-lattery/$', views.get_lattery, name='get-lattery'),
+    url(r'^login/$', views.user_login, name='login'),
+    url(r'^logout/$', views.user_logout, name='logout'),
     url(r'^changePass/$', views.change_password, name='change_password'),
 ]

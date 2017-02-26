@@ -6,8 +6,8 @@
 {% endblock %}
 
 {% block content %}
-      <div class="row">
-        <div class="col-md-6" style="margin: auto;float: right;" id="right-box">
+      <div class="row" data-ng-app="myApp">
+        <div class="col-md-6" style="margin: auto;float: right;" id="right-box" data-ng-controller="myCtrl">
 
           <div class="box box-primary" id="lottery">
 
@@ -16,17 +16,17 @@
                <div>
                  <h1>Lottery Title</h1></div></div>
               <div class="slot" style="margin-top:0;">
-                <div class="box-number">
+                <div class="box-number" >
                   <div class="box box-primary number"></div>
 
                   <div class="box box-primary number"></div>
 
-                  <div class="box box-primary number"></div>
+                  <div class="box box-primary number" ></div>
                 </div>
               </div>
             <form action="." method="get">
               <input type="hidden" name="status_check" />
-              <input type="submit" name="spin" id="spin" class="btn btn-primary btn-block spin" style="font-size:14pt;width: 100px;transition: all ease 0.4s;font-weight: bold;" value="spin">
+              <input data-ng-click="myFunc();" type="button" name="spin" id="spin" class="btn btn-primary btn-block spin" style="font-size:14pt;width: 100px;transition: all ease 0.4s;font-weight: bold;" value="spin">
              </form>
              <p id="msg" style="font-size: 18px;font-weight: bold; text-align: left; margin:25px 0 0 14%;transition: all ease 0.4s;"></p>
 
@@ -44,8 +44,8 @@
                       </tr>
                       <tr>
                         <td><span class="badge bg-green">0</span></td>
-                        <td><span class="badge bg-yellow">{{ user.total_spin }}</span></td>
-                        <td><span class="badge bg-red">{{ user.score }}</span></td>
+                        <td><span class="badge bg-yellow" data-ng-bind="total_spin">{{ user.total_spin }}</span></td>
+                        <td><span class="badge bg-red" data-ng-bind="score">{{ user.score }}</span></td>
                       </tr>
                     </tbody>
                   </table>
@@ -64,7 +64,7 @@
               <div class="active tab-pane" id="activity">
 
                 <div class="post">
-                  <h1 style="font-size:16px;color: #ca2626;font-weight: bold;">Guidance</h1>
+                  <h1 style="font-size:16px;color: #1d1919;font-weight: bold;">Guidance</h1>
                   <p>
                     Lorem ipsum represents a long-held tradition for designers,
                     typographers and the like. Some people hate it and argue for
@@ -74,7 +74,7 @@
                   </p>
                 </div>
 
-                <h1 style="font-size:16px;color: #ca2626;font-weight: bold;">Scores</h1>
+                <h1 style="font-size:16px;color: #1d1919;font-weight: bold;">Scores</h1>
 
                 <p>
                     Lorem ipsum represents a long-held tradition for designers,
@@ -92,10 +92,8 @@
 
 {% block scripts %}
 <script>
-    var first_wheel = '{{ firstWheel }}';
-    var second_wheel = '{{ secondWheel }}';
-    var third_wheel = '{{ thirdWheel }}';
     var msg = '{{ message }}';
 </script>
 <script src="{% static 'js/slot.js' %}"></script>
+<script src="{% static 'js/controllers.js' %}"></script>
 {% endblock %}

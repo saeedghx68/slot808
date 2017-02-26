@@ -10,12 +10,13 @@
   <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/Admin.min.css' %}">
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <script src="{% static 'js/angular.min.js' %}" type="text/javascript"></script>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
   <aside class="main-sidebar" style="right: 0;padding-top: 0;left: auto;">
       <header class="main-header">
-        <a href="/profile/" class="logo" style="background-color: #a91b1b;color:#fff;">
+        <a href="/profile/" class="logo" style="background-color: #f4ff4f;color:#000;">
             <span class="logo-lg">User Profile</span>
         </a>
       </header>
@@ -25,7 +26,7 @@
           <div class="outer">
             <img class="profile-user-img img-responsive img-circle" src="/media/{{ user.img }}" alt="User profile picture">
           </div>
-          <div class="setting-outer" style="left: 10%; right: auto;">
+          <div class="setting-outer" id="setting" style="left: 10%; right: auto;">
             <div class="img-circle setting-div">
               <a href="/changePass/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="change password">
               <i class="fa fa-gears" style="color: white; margin: 2px;"></i></a></div>

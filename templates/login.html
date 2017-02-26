@@ -30,7 +30,7 @@
                 <p class="cta"><a href="#" style="display:inline-block;">ورود</a></p>
             </form>
 
-              <p>{{ message1 }} {{ message2 }}</p>
+              <p>{{ msg }}</p>
               <form action="" method="post" name="LoginForm" class="login-form">
                 {% csrf_token %}
                 <input type="hidden" name="next" value="login" />
