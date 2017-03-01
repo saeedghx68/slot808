@@ -30,7 +30,7 @@ angular.module('myApp', [])
             document.getElementById('msg').innerHTML = "";
             spin_btn = document.getElementById('spin');
             spin_btn.setAttribute("disabled","disabled");
-            spin_btn.value = "wait...";
+            spin_btn.value = "...منتظر بمانید";
 
             $('.box-number').find(".number").html(reels_html);
 
@@ -48,8 +48,8 @@ angular.module('myApp', [])
 
                         window.setTimeout(function() {
                             spin_btn.removeAttribute("disabled");
-                            spin_btn.value = "spin";
-                            spin_btn.innerHTML = "spin";
+                            spin_btn.value = "چرخش";
+                            spin_btn.innerHTML = "چرخش";
 
                             document.getElementById('msg').innerHTML = $scope.msg;
 
@@ -68,12 +68,18 @@ angular.module('myApp', [])
         $http.get('/get-lattery/')
           .success(function(data) {
 
-                $scope.first_wheel = data.firstWheel;
-                $scope.second_wheel = data.secondWheel;
-                $scope.third_wheel = data.thirdWheel;
-                $scope.msg = data.message;
-                $scope.total_spin = data.totalSpin ;
-                $scope.slotMachine()
+              $scope.msg = data.message;
+
+              if (data.btn_status == ''){
+                  $scope.first_wheel = data.firstWheel;
+                  $scope.second_wheel = data.secondWheel;
+                  $scope.third_wheel = data.thirdWheel;
+                  $scope.total_spin = data.totalSpin ;
+                  $scope.slotMachine()
+              }
+              else{
+                  document.getElementById('spin').setAttribute("disabled","disabled");
+              }
 
         });
     };

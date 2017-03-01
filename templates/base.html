@@ -14,10 +14,10 @@
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
-  <aside class="main-sidebar" style="right: 0;padding-top: 0;left: auto;">
+  <aside class="main-sidebar" style="right: 0;padding-top: 0;left: auto; position: fixed;">
       <header class="main-header">
         <a href="/profile/" class="logo" style="background-color: #f4ff4f;color:#000;">
-            <span class="logo-lg">User Profile</span>
+            <span class="logo-lg">پروفایل کاربر</span>
         </a>
       </header>
 
@@ -28,16 +28,22 @@
           </div>
           <div class="setting-outer" id="setting" style="left: 10%; right: auto;">
             <div class="img-circle setting-div">
-              <a href="/changePass/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="change password">
+              <a href="/changePass/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="تغییر رمز عبور">
               <i class="fa fa-gears" style="color: white; margin: 2px;"></i></a></div>
           </div>
           <div class="setting-outer">
             <div class="img-circle setting-div">
-              <a href="/logout/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="exit">
+              <a href="/logout/" data-toggle="tooltip" data-placement="bottom" data-original-title="Tooltip on bottom" class="red-tooltip" title="خروج">
               <i class="fa fa-sign-out" aria-hidden="true" style="color: white; margin: 3px 5px;"></i></a></div>
           </div>
           <div class="pull-left info">
-            <p style="word-wrap: break-word;white-space: normal;">{{ user.first_name }} {{ user.last_name }}</p>
+            <p style="word-wrap: break-word;white-space: normal;">{{ user.first_name }} &nbsp;{{ user.last_name }}</p>
+          </div>
+          <div class="pull-left info" style="margin-top: 50px;">
+            <p> : امتیاز شما
+              <br>
+              <span>{{ user.score }}</span>
+            </p>
           </div>
         </div>
       </section>

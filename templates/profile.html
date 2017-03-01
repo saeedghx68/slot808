@@ -7,14 +7,14 @@
 
 {% block content %}
       <div class="row" data-ng-app="myApp">
-        <div class="col-md-6" style="margin: auto;float: right;" id="right-box" data-ng-controller="myCtrl">
+        <div class="col-md-6" style="margin: auto;float: none;" id="right-box" data-ng-controller="myCtrl">
 
           <div class="box box-primary" id="lottery">
 
             <div class="row">
              <div class="lottery-title">
                <div>
-                 <h1>Lottery Title</h1></div></div>
+                 <h1>{{ lottery.title }}</h1></div></div>
               <div class="slot" style="margin-top:0;">
                 <div class="box-number" >
                   <div class="box box-primary number"></div>
@@ -26,64 +26,51 @@
               </div>
             <form action="." method="get">
               <input type="hidden" name="status_check" />
-              <input data-ng-click="myFunc();" type="button" name="spin" id="spin" class="btn btn-primary btn-block spin" style="font-size:14pt;width: 100px;transition: all ease 0.4s;font-weight: bold;" value="spin">
+              <input data-ng-click="myFunc();" type="button" {{btn_status}} name="spin" id="spin" class="btn btn-primary btn-block spin" value="چرخش">
              </form>
-             <p id="msg" style="font-size: 18px;font-weight: bold; text-align: left; margin:25px 0 0 14%;transition: all ease 0.4s;"></p>
+             <p id="msg">{{ message }}</p>
 
-            </div>
-
-            <div class="col-xs-12">
-              <div class="box" style="width: 82%;margin: 20px auto 0;height: 75px;">
-                <div class="box-body table-responsive no-padding" style="font-size: 14px;width: 100%; margin-top: 0;">
-                  <table class="table table-hover">
-                    <tbody>
-                      <tr>
-                        <th>LAST WIN</th>
-                        <th>TOTAL SPINS</th>
-                        <th>TOTAL SCORES</th>
-                      </tr>
-                      <tr>
-                        <td><span class="badge bg-green">0</span></td>
-                        <td><span class="badge bg-yellow" data-ng-bind="total_spin">{{ user.total_spin }}</span></td>
-                        <td><span class="badge bg-red" data-ng-bind="score">{{ user.score }}</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-md-6">
+        <div class="col-md-9" style="float: none;margin: 30px auto;">
           <div class="nav-tabs-custom">
             <div class="box-header with-border" id="description">
-              <h3 class="box-title" style="font-size: 30px;">About Lottery</h3>
+              <h3 class="box-title">درباره قرعه کشی</h3>
             </div>
-            <div class="tab-content" style="text-align: right; direction:rtl;">
-              <div class="active tab-pane" id="activity">
 
-                <div class="post">
-                  <h1 style="font-size:16px;color: #1d1919;font-weight: bold;">Guidance</h1>
-                  <p>
-                    Lorem ipsum represents a long-held tradition for designers,
-                    typographers and the like. Some people hate it and argue for
-                    its demise, but others ignore the hate as they create awesome
-                    tools to help create filler text for everyone from bacon lovers
-                    to Charlie Sheen fans.
-                  </p>
+            <div class="tab-content">
+                <div class="active tab-pane" id="activity">
+                  <div class="post">
+                    <h1>توضیحات :</h1>
+                    <p>
+                        {{ lottery.description }}
+                    </p>
+                  </div>
+
+                  <h1>جوایز قرعه کشی :</h1>
+                  <div class="row">
+                    {% for award in active_awards %}
+                      <div class="col-md-4 award-div">
+                        <div class="award-box">
+                          <img src="/media/{{ award.img }}" alt="awards">
+                        </div>
+                        <h4>{{ award.title }}</h4>
+                        <div class="col-md-12">
+                          <p>
+                            امتیاز لازم: <br>بین
+                            <span>{{ award.min_score }}</span>
+                              و
+                            <span style="margin-top: 3px;">{{ award.max_score }}</span>
+                          </p>
+                        </div>
+                      </div>
+                    {% endfor %}
+
+                  </div>
+
                 </div>
-
-                <h1 style="font-size:16px;color: #1d1919;font-weight: bold;">Scores</h1>
-
-                <p>
-                    Lorem ipsum represents a long-held tradition for designers,
-                    typographers and the like. Some people hate it and argue for
-                    its demise, but others ignore the hate as they create awesome
-                    tools to help create filler text for everyone from bacon lovers
-                    to Charlie Sheen fans.
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -91,9 +78,6 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
-    var msg = '{{ message }}';
-</script>
 <script src="{% static 'js/slot.js' %}"></script>
 <script src="{% static 'js/controllers.js' %}"></script>
 {% endblock %}

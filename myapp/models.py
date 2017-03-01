@@ -28,9 +28,22 @@ class User(AbstractUser):
         verbose_name_plural = u'کاربران'
 
 
+class Lottery(models.Model):
+    title = models.CharField(max_length=100, verbose_name=u'عنوان قرعه کشی')
+    description = models.TextField(default="", verbose_name=u'توضیحات')
+    active = models.BooleanField(default=True, verbose_name=u'وضعیت فعال بودن')
+
+    def __unicode__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = u'قرعه کشی'
+        verbose_name_plural = u'قرعه کشی ها'
+
+
 class Awards(models.Model):
     title = models.CharField(max_length=100, verbose_name=u'عنوان جایزه')
-    description = models.TextField(verbose_name=u'توضیحات')
+    description = models.TextField(default="", verbose_name=u'توضیحات')
     img = models.ImageField(default='images/gallery/award.jpg', upload_to='images/awards/',
                             verbose_name=u'تصویر جایزه')
     min_score = models.IntegerField(verbose_name=u'حداقل امتیاز')
@@ -51,7 +64,7 @@ class UserAwards(models.Model):
     award = models.ForeignKey(Awards, verbose_name=u'جایزه', related_name='award')
 
     def __unicode__(self):
-        return self.user
+        return self.user.username
 
     class Meta:
         verbose_name = u'برنده'

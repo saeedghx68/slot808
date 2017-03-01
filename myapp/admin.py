@@ -4,6 +4,7 @@ from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.forms import UserChangeForm
 from django.contrib.auth import get_user_model
 from myapp.admin_view import *
+from django import forms
 
 User = get_user_model()
 
@@ -16,11 +17,20 @@ class MyUserForm(UserChangeForm):
 class MyUserAdmin(UserAdmin):
     form = MyUserForm
     fieldsets = UserAdmin.fieldsets + (
-        ('Additional Info', {'fields': ('img', 'score', 'total_spin')}),
+        ('Additional Info', {'fields': ('img', 'score', 'win')}),
     )
     # readonly_fields = ('username', )
 
+
+class LotteryAdmin(admin.ModelAdmin):
+    formfield_overrides = {models.TextField: {'widget': forms.Textarea(attrs={'class': 'ckeditor'})}, }
+
+    class Media:
+        js = ('ckeditor/ckeditor.js',)
+
+
 admin.site.register_view('user-list', view=view_user_list)
 admin.site.register(User, MyUserAdmin)
+admin.site.register(Lottery, LotteryAdmin)
 admin.site.register(Awards)
 admin.site.register(UserAwards)
