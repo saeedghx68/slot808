@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from random import randint
-from django.http import HttpResponseRedirect, HttpResponseNotFound, JsonResponse
+from django.contrib.auth.decorators import login_required
+from django.http import HttpResponseRedirect, HttpResponseNotFound, JsonResponse, HttpResponse
 from django.shortcuts import render_to_response, render, redirect
 from django.views.decorators.csrf import csrf_protect
 from myapp.models import *
@@ -23,10 +24,16 @@ def user_login(request):
         username = data.get('username', '')
         password = data.get('password', '')
         user = authenticate(username=username, password=password)
+
         if user is not None:
             if user.is_active:
                 login(request, user)
                 return HttpResponseRedirect('/profile/')
+            else:
+                return HttpResponse("!اکانت شما غیر  فعال است")
+        else:
+            message = "لطفا نام کاربری و رمز عبور را درست وارد نمایید."
+            return render(request, 'login.html', {'message': message})
     else:
         return render(request, 'login.html')
 
@@ -84,7 +91,7 @@ def get_lattery(request):
     return JsonResponse(c)
 
 
-@csrf_protect
+@login_required(login_url="login/")
 def profile(request):
     c = {}
     c['btn_status'] = ''
@@ -115,7 +122,7 @@ def profile(request):
     return render_to_response('profile.html', c)
 
 
-@csrf_protect
+@login_required(login_url="login/")
 def change_password(request):
     c = {}
     c['user'] = request.user
