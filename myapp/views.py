@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 from random import randint
 from django.http import HttpResponseRedirect, HttpResponseNotFound, JsonResponse
-from django.shortcuts import render_to_response, render
+from django.shortcuts import render_to_response, render, redirect
 from django.views.decorators.csrf import csrf_protect
 from myapp.models import *
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth import get_user_model, authenticate
+from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout, get_user_model, authenticate, update_session_auth_hash
+from django.contrib.auth.forms import PasswordChangeForm
 from django.template import Context, RequestContext
 from .forms import *
 import csv
@@ -118,10 +119,13 @@ def profile(request):
 def change_password(request):
     c = {}
     c['user'] = request.user
-    try:
-        if request.method == 'POST':
-            data = request.POST
 
-    except (KeyError, User.DoesNotExist):
-        return HttpResponseRedirect('/login/')
-    return render_to_response('changePass.html', c)
+    if request.method == 'POST':
+        c['form'] = PasswordChangeForm(request.user, request.POST)
+        if c['form'].is_valid():
+            user = c['form'].save()
+            update_session_auth_hash(request, user)
+            c['message'] = u'رمز عبور شما با موفقیت به روز رسانی شد.'
+    else:
+        c['form'] = PasswordChangeForm(request.user)
+    return render(request, 'changePass.html', c)

@@ -337,6 +337,17 @@ body{
     overflow: hidden;
 }
 
+.form-horizontal ul{
+    list-style-type: none;
+    padding-right: 5px !important;
+    margin-top: 20px !important;
+}
+
+ul.errorlist {
+    color: #c30101;
+    margin-top: 5px !important;
+}
+
 .outer {
     margin: 20px auto 0;
     width: 150px;

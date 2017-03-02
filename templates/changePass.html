@@ -10,25 +10,37 @@
         <div class="col-md-5" style="float: none;margin:10% auto;">
           <div class="box-info" id="changePassBox">
             <h4>فرم تغییر رمز عبور</h4>
-            <form action="" method="post" name="changePassForm" class="form-horizontal" style="padding:25px 40px; border-top: 1px solid #000;">
+            <form action="" method="post" name="changePassForm" class="form-horizontal" style="direction:rtl; padding:25px 40px; border-top: 1px solid #000;">
+              <p style="color:green;">{{ message }}</p>
               {% csrf_token %}
               <div class="box-body" style="font-size:14px;">
                 <div>
-
                   <div class="col-sm-12" id="oldPass">
-                    <input type="text" class="form-control" name="oldPass" placeholder="رمز عبور قبلی">
+                    <label for="id_old_password"> رمز عبور قدیمی: </label>
+                    {{ form.old_password }}
+                    {{ form.old_password.errors }}
                   </div>
 
                   <div class="col-sm-12" id="pass1">
-                    <input type="text" class="form-control" name="pass1" placeholder="رمز عبور جدید">
+                    <label for="id_new_password1"> رمز عبور جدید: </label>
+                    {{ form.new_password1 }}
+                    {{ form.new_password1.errors }}
                   </div>
 
                   <div class="col-sm-12" id="pass2">
-                    <input type="text" class="form-control" name="pass2" placeholder="تکرار رمز جدید">
+                    <label for="id_new_password2">تأیید رمز عبور جدید: </label>
+                    {{ form.new_password2 }}
+                    {{ form.new_password2.errors }}
                   </div>
                 </div>
-                <button type="submit" class="btn btn-info pull-right" style="width:auto;margin:auto;">اعمال تغییر</button>
+                <button type="submit" class="btn btn-info pull-right" style="width:auto;margin:auto;float: left !important;">اعمال تغییر</button>
               </div>
+              <ul>
+                  <li>رمز عبور شما نمی&zwnj;تواند شبیه سایر اطلاعات شخصی شما باشد.</li>
+                  <li>رمز عبور شما می&zwnj;بایست حداقل از 8 حرف تشکیل شده باشد.</li>
+                  <li>رمز شما نمی تواند از عبارات معروف باشد.</li>
+                  <li>رمز شما نمی تواند کلا عدد باشد.</li>
+              </ul>
             </form>
           </div>
         </div>
