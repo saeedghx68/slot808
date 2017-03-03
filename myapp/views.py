@@ -57,19 +57,19 @@ def get_lattery(request):
     try:
         if user.win:
             c['btn_status'] = 'disabled'
-            c['message'] = u'شما قبلا در قرعه کشی شرکت کرده اید'
+            c['message'] = u'شما قبلا در قرعه کشی شرکت کرده اید.'
         else:
             awards = Awards.objects.filter(active=True)
             if len(awards) == 0:
                 c['btn_status'] = 'disabled'
-                c['message'] = u'!قرعه کشی به پایان رسیده است'
+                c['message'] = u'قرعه کشی به پایان رسیده است!'
             else:
                 for award_obj in awards:
                     if award_obj.min_score < user.score < award_obj.max_score:
                         award = award_obj
                 if award is None:
                     c['btn_status'] = 'disabled'
-                    c['message'] = u'!شما امتیاز لازم برای شرکت در قرعه کشی را ندارید'
+                    c['message'] = u'شما امتیاز لازم برای شرکت در قرعه کشی را ندارید!'
                 else:
                     c['secondWheel'] = randint(0, 9)
                     c['firstWheel'] = randint(0, 9)
@@ -83,15 +83,15 @@ def get_lattery(request):
                             award.save(update_fields=["active"])
                         user.win = True
                         user.save()
-                        c['message'] = '(: تبریک! شما برنده شدید'
+                        c['message'] = ' تبریک! شما برنده شدید :)'
                     else:
-                        c['message'] = '...شما برنده نشدید! مجددا تلاش کنید'
+                        c['message'] = 'شما برنده نشدید! مجددا تلاش کنید...'
     except Exception as ex:
         print ex
     return JsonResponse(c)
 
 
-@login_required(login_url="login/")
+@login_required(login_url="/login/")
 def profile(request):
     c = {}
     c['btn_status'] = ''
@@ -103,26 +103,26 @@ def profile(request):
         c['user'] = request.user
         if c['user'].win:
             c['btn_status'] = 'disabled'
-            c['message'] = u'شما قبلا در قرعه کشی شرکت کرده اید'
+            c['message'] = u'شما قبلا در قرعه کشی شرکت کرده اید.'
         else:
             active_awards = c['active_awards']
             if len(active_awards) == 0:
                 c['btn_status'] = 'disabled'
-                c['message'] = u'.قرعه کشی به پایان رسیده است'
+                c['message'] = u'قرعه کشی به پایان رسیده است.'
             else:
                 for award_obj in active_awards:
                     if award_obj.min_score < c['user'].score < award_obj.max_score:
                         award = award_obj
                 if award is None:
                     c['btn_status'] = 'disabled'
-                    c['message'] = u'!شما امتیاز لازم برای شرکت در قرعه کشی را ندارید'
+                    c['message'] = u'شما امتیاز لازم برای شرکت در قرعه کشی را ندارید.'
 
     except Exception as ex:
         return HttpResponseRedirect('/login/')
     return render_to_response('profile.html', c)
 
 
-@login_required(login_url="login/")
+@login_required(login_url="/login/")
 def change_password(request):
     c = {}
     c['user'] = request.user

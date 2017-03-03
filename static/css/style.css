@@ -230,7 +230,7 @@ body{
     border-color: #000000;
 }
 
-.l-form-button, .form-horizontal button {
+.reset-div input[type=submit], .l-form-button, .form-horizontal button {
     padding: 10px 15px !important;
     border: 1px solid #ccc !important;
     color: #000;
@@ -246,10 +246,9 @@ body{
     cursor: pointer;
 }
 
-.l-form-button:hover,.l-form-button:active,.l-form-button:focus,
+.reset-div input[type=submit]:hover, .l-form-button:hover,.l-form-button:active,.l-form-button:focus,
  .form-horizontal button:hover, .form-horizontal button:active,
   .form-horizontal button:focus {
-    /* border-color:#9fd1c6 or #ca2626 !important;  or #33b5e5  or #30bbbb*/
     border-color: #aaa !important;
     text-shadow: none !important;
     background-color: #e5ef5c !important;
@@ -283,6 +282,7 @@ body{
 }
 
 .legend {
+    font-weight: bold;
     font-family: 'yekan', 'RobotoDraft', 'Roboto', sans-serif;
     position: relative;
     max-width: 100%;
@@ -306,6 +306,44 @@ body{
     bottom: 0;
     right: 0;
     position: absolute;
+}
+
+.reset-div{
+    direction: rtl;
+    text-align: center;
+    font-family: yekan;
+    padding: 20px 25px;
+}
+
+.reset-div label{
+    float: right;
+    padding: 3px 5px;
+}
+
+.reset-div input{
+    padding: 6px 10px;
+    direction: ltr;
+}
+
+.reset-div input:focus{
+    padding: 6px 10px;
+}
+
+.reset-div h4{
+    font-weight: normal;
+}
+
+.reset-title {
+    font-family: 'yekan', 'RobotoDraft', 'Roboto', sans-serif;
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    display: block;
+    background: #f4ff4f !important;
+    padding: 8px 20px;
+    color: #000;
+    font-size: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.21);
 }
 
 .input{
@@ -578,6 +616,7 @@ ul.errorlist {
     text-align: center;
     margin:31px 0 0 14%;
     color: white;
+    direction: rtl;
 }
 
 #spin{

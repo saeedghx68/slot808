@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static from staticfiles %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>بازیابی رمز عبور |
+    {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" media="screen" />
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
+</head>
+
+<body>
+
+    <div class="l-container">
+
+        <div class="reset-title">بازیابی رمز عبور</div>
+        <div class="login-page">
+          <div class="l-form reset-div">
+            {% block content %}
+            {% endblock %}
+          </div>
+        </div>
+    </div>
+
+    <div class="feedback">
+    </div>
+
+</body>
+</html>

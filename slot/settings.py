@@ -129,3 +129,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 AUTH_USER_MODEL = "myapp.User"
 
+
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'boshra_dor@yahoo.com'
+SERVER_EMAIL = 'boshra_dor@yahoo.com'
+EMAIL_HOST = 'smtp.mail.yahoo.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'boshra_dor@yahoo.com'
+EMAIL_HOST_PASSWORD = 'b0371004586'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
