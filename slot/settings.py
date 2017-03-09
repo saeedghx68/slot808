@@ -110,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'fa-ir'
 
-locale.setlocale(locale.LC_ALL, "fa_IR")
+locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
 
 TIME_ZONE = 'Asia/Tehran'
 

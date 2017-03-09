@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+    background: url("../img/logo_200.png") no-repeat;
+    background-size: 100% 100%;
+width: 200px;
+height: 145px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 2%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.viewport {
+    overflow: hidden;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+}
+#step-1 {
+	background:#FFF8CC;
+	background:-moz-radial-gradient(center, ellipse cover, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
+	background:-webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff8cc), color-stop(40%,#fff5b4), color-stop(100%,#ffde7d));
+	background:-webkit-radial-gradient(center, ellipse cover, #fff8cc 0%,#fff5b4 40%,#ffde7d 100%);
+	background:-o-radial-gradient(center, ellipse cover, #fff8cc 0%,#fff5b4 40%,#ffde7d 100%);
+	background:-ms-radial-gradient(center, ellipse cover, #fff8cc 0%,#fff5b4 40%,#ffde7d 100%);
+	background:radial-gradient(ellipse at center, #fff8cc 0%,#fff5b4 40%,#ffde7d 100%);
+	background-attachment:fixed;
+}
+#step-2 {
+	background: #E8FFB0;
+	background: -moz-radial-gradient(center, ellipse cover, #E8FFB0 0%, #A0D840 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#E8FFB0), color-stop(100%,#A0D840));
+	background: -webkit-radial-gradient(center, ellipse cover, #E8FFB0 0%,#A0D840 100%);
+	background: -o-radial-gradient(center, ellipse cover, #E8FFB0 0%,#A0D840 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #E8FFB0 0%,#A0D840 100%);
+	background: radial-gradient(ellipse at center, #E8FFB0 0%,#A0D840 100%);
+	background-attachment:fixed;
+}
+#step-3 {
+	background: #FFF0C0;
+	background: -moz-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFF0C0), color-stop(100%, #FFC000));
+	background: -webkit-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
+	background: -o-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
+	background: -ms-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
+	background: radial-gradient(ellipse at center, #FFF0C0 0%, #FFC000 100%);
+	background-attachment:fixed;
+}
+.pack {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 990;
+}
+.firepack {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 990;
+	width: 449px;
+	height: 600px;
+	transform: translate(-50%,-54%);
+}
+#step-1 > .pack1 {
+    background-image: url("../img/burger-blue.png");
+}
+#step-2 > .pack2 {
+    background-image: url("../img/burger-full.png");
+}
+#step-3 > .pack3 {
+    background-image: url("../img/burger-full.png");
+}
+#step-3 > .firepack {
+    background-image: url("../img/fire-flame.png");
+}

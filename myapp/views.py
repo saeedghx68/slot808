@@ -16,6 +16,8 @@ import cStringIO as StringIO
 
 User = get_user_model()
 
+def home(request):
+    return render_to_response('index.html')
 
 @csrf_protect
 def user_login(request):

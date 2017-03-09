@@ -27,6 +27,7 @@ admin.autodiscover()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^profile/$', profile, name='profile'),
+    url(r'^$', home, name='home'),
     url(r'^get-lattery/$', get_lattery, name='get-lattery'),
     url(r'^login/$', user_login, name='login'),
     url(r'^logout/$', user_logout, name='logout'),

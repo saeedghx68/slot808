@@ -1,0 +1,122 @@
+@charset "utf-8";
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#logo {
+    background: url("../img/logo_200.png") no-repeat;
+    background-size: 100% 100%;
+width: 200px;
+height: 145px;
+    position: fixed;
+    z-index: 9999;
+    left: 50%;
+    top: 2%;
+    -ms-transform-origin: 50% 0%;
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+}
+.viewport {
+    overflow: hidden;
+}
+
+.main-container {
+	width: 100%;
+	text-align: center;
+}
+
+.first-part {
+	width: 100%;
+}
+.bg-color {
+	position: relative;
+	width: 100%;
+/*	height: 1000px;*/
+	overflow: hidden;
+	z-index: -1;
+}
+.bg-color:nth-of-type(1) {
+	background-color: #F43A51;
+}
+.bg-color:nth-of-type(2) {
+	background-color: #518BF0;
+}
+.bg-color:nth-of-type(3) {
+	background-color: #51F094;
+}
+.bg-color:nth-of-type(4) {
+	background-color: #F0E551;
+}
+.bg-color:nth-of-type(5) {
+	background-color: #EF4516;
+}
+.burger {
+	width: 444px;
+	height: 156px;
+	background-image: url("../img/raw-burger.png");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 20;
+}
+.fire {
+	width: 449px;
+	height: 600px;
+	background-image: url("../img/Fire-Flame.png");
+	background-repeat: no-repeat;
+	background-size: 387px 300px;
+	position: fixed;
+	left: 52%;
+	transform: translate(-50%,0);
+	z-index: 50;
+}
+.pickels {
+	width: 444px;
+	height: 125px;
+	background-image: url("../img/Pickels.png");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 30;
+}
+
+.d-bread {
+	width: 444px;
+	height: 174px;
+	background-image: url("../img/down-bread.png");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 10;
+}
+.t-bread {
+	width: 444px;
+	height: 174px;
+	background-image: url("../img/up-bread.png");
+	background-repeat: no-repeat;
+	position: fixed;
+	left: 50%;
+	transform: translate(-50%,0);
+	z-index: 40;
+}
+.pieces {
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	position:absolute;
+	z-index:999;
+}
+#step4 > .piece-1 { background-image:url("../img/fries/piece-1.png"); left:5%;   }
+#step4 > .piece-2 { background-image:url("../img/fries/piece-2.png"); left:85%;  }
+#step4 > .piece-3 { background-image:url("../img/fries/piece-3.png"); left:-20%; }
+#step4 > .piece-4 { background-image:url("../img/fries/piece-4.png"); left:57%;  }
+#step4 > .piece-5 { background-image:url("../img/fries/piece-5.png"); left:50%;  }
+#step4 > .piece-6 { background-image:url("../img/fries/piece-6.png"); left:20%;  }
+#step4 > .piece-7 { background-image:url("../img/fries/piece-7.png"); left:70%;  }
+#step4 > .piece-8 { background-image:url("../img/fries/piece-8.png"); left:60%;  }
+#step4 > .piece-9 { background-image:url("../img/fries/piece-9.png"); left:50%; z-index:980; }
