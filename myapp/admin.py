@@ -29,6 +29,14 @@ class LotteryAdmin(admin.ModelAdmin):
         js = ('ckeditor/ckeditor.js',)
 
 
+class GalleryAdmin(admin.ModelAdmin):
+    list_display = ('alt','cat_id')
+    search_fields = ('alt',)
+    list_filter = ('cat_id',)
+
+
+admin.site.register(Gallery,GalleryAdmin)
+admin.site.register(Category)
 admin.site.register_view('user-list', view=view_user_list)
 admin.site.register(User, MyUserAdmin)
 admin.site.register(Lottery, LotteryAdmin)

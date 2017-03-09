@@ -4,6 +4,7 @@ from django.db import models
 import hashlib
 import time
 from django.contrib.auth.models import AbstractUser
+from datetime import datetime
 
 
 def _createHash():
@@ -69,3 +70,47 @@ class UserAwards(models.Model):
     class Meta:
         verbose_name = u'برنده'
         verbose_name_plural = u'برنده ها'
+
+#****************Declare gallery model
+
+class Category(models.Model):
+    name = models.CharField(default='other',max_length=50,verbose_name=u'نام دسته')
+    upload_date = models.DateTimeField(default=datetime.now, blank=True)
+
+    def as_json(self):
+        return {
+                'id': self.id - 1,
+                'name': self.name,
+                }
+
+    def __unicode__(self):
+        return self.name
+
+    class Meta:
+        ordering = ['upload_date']
+        verbose_name = u'دسته بندی محصولات'
+        verbose_name_plural = u'دسته بندی محصولات'
+
+class Gallery(models.Model):
+    cat_id = models.ForeignKey(Category,verbose_name=u'گروه')
+    small_img = models.ImageField(default='images/gallery/defaults.jpg',upload_to='images/gallery/',verbose_name=u'تصویر کوچک')
+    large_img = models.ImageField(default='images/gallery/defaults.jpg',upload_to='images/gallery/',verbose_name=u'تصویر بزرگ')
+    alt = models.CharField(default='',max_length=100,verbose_name=u'عنوان')
+    upload_date = models.DateTimeField(default=datetime.now, blank=True)
+
+    def as_json(self):
+        return {
+                'id':self.id - 1,
+                'imgs': str(self.small_img),
+                'imgl': str(self.large_img),
+                'alt':self.alt,
+                }
+
+    def __unicode__(self):
+        return self.alt
+
+    class Meta:
+        ordering = ['upload_date']
+        verbose_name = u'گالری محصولات'
+        verbose_name_plural = u'گالری محصولات'
+#*****************End of gallery model
