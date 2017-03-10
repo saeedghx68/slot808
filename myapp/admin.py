@@ -29,6 +29,13 @@ class LotteryAdmin(admin.ModelAdmin):
         js = ('ckeditor/ckeditor.js',)
 
 
+class AboutAdmin(admin.ModelAdmin):
+    formfield_overrides = {models.TextField: {'widget': forms.Textarea(attrs={'class': 'ckeditor'})}, }
+
+    class Media:
+        js = ('ckeditor/ckeditor.js',)
+
+
 class GalleryAdmin(admin.ModelAdmin):
     list_display = ('alt','cat_id')
     search_fields = ('alt',)
@@ -42,3 +49,6 @@ admin.site.register(User, MyUserAdmin)
 admin.site.register(Lottery, LotteryAdmin)
 admin.site.register(Awards)
 admin.site.register(UserAwards)
+admin.site.register(About, AboutAdmin)
+admin.site.register(Goals)
+admin.site.register(Points)

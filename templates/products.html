@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+    محصولات
+{% endblock %}
+
+{% block page-header %}
+    محصولات
+{% endblock %}
+
+{% block products %} active {% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="span12">
+            <div id="filters">
+                <ul class="portfolio-filter">
+                    <li><a href="#" data-filter="*" class="selected">همه</a></li>
+                    {% for category in categories %}
+                        <li><a href="#" data-filter=".{{ category.id }}">{{ category.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <ul class="thumbnails">
+            {% for item in gallery %}
+                <li class="span3 {{ item.cat_id.id }}">
+                    <div class="thumbnail">
+                        <div class="portfolio-item">
+                            <img src="/media/{{ item.small_img }}" alt="" />
+                            <div class="folio-body">
+                                <div class="folio-info">
+                                    <h5><a href="#">{{ item.alt }}</a></h5>
+                                    <p>{{ item.cat_id.name }}</p>
+                                </div>
+                                <div class="folio-zoom">
+                                    <a href="/media/{{ item.large_img }}" rel="prettyPhoto[pp_gal]"><i class="icon-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

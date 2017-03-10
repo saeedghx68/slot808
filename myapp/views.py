@@ -16,8 +16,40 @@ import cStringIO as StringIO
 
 User = get_user_model()
 
+
 def home(request):
     return render_to_response('index.html')
+
+
+def products(request):
+    c = {}
+    try:
+        c['gallery'] = Gallery.objects.all()
+        c['categories'] = Category.objects.all()
+    except:
+        c['gallery'] = u'عکس های گالری وارد نشده!'
+    return render_to_response('products.html', c)
+
+
+def about_us(request):
+    c = {}
+    try:
+        c['about'] = About.objects.all()[0]
+        c['goals'] = Goals.objects.all()
+        c['points'] = Points.objects.all()
+    except:
+        c['about'] = u'اطلاعات وارد نشده!'
+    return render_to_response('about_us.html', c)
+
+
+def contact(request):
+    c = {}
+    try:
+        c['about'] = About.objects.all()[0]
+    except:
+        c['about'] = u'درباره ما وجود ندارد!'
+    return render_to_response('contact.html', c)
+
 
 @csrf_protect
 def user_login(request):
@@ -37,7 +69,7 @@ def user_login(request):
             message = "لطفا نام کاربری و رمز عبور را درست وارد نمایید."
             return render(request, 'login.html', {'message': message})
     else:
-        return render(request, 'login.html')
+        return render(request, 'profile/login.html')
 
 
 def user_logout(request):
@@ -121,7 +153,7 @@ def profile(request):
 
     except Exception as ex:
         return HttpResponseRedirect('/login/')
-    return render_to_response('profile.html', c)
+    return render_to_response('profile/profile.html', c)
 
 
 @login_required(login_url="/login/")
@@ -137,4 +169,4 @@ def change_password(request):
             c['message'] = u'رمز عبور شما با موفقیت به روز رسانی شد.'
     else:
         c['form'] = PasswordChangeForm(request.user)
-    return render(request, 'changePass.html', c)
+    return render(request, 'profile/changePass.html', c)

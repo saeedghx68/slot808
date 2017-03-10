@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+    ارتباط با ما
+{% endblock %}
+
+{% block page-header %}
+    ارتباط با ما
+{% endblock %}
+
+{% block contact %} active {% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="span12" style="margin-bottom: 30px;">
+            <div class="img-polaroid">
+                <iframe marginheight="0" marginwidth="0" src="http://maps.google.com/maps?oe=utf-8&amp;client=firefox-a&amp;q=uttara&amp;ie=UTF8&amp;hq=uttara&amp;hnear=&amp;t=m&amp;ll=37.262153,-79.942041&amp;spn=0.006295,0.006295&amp;output=embed" frameborder="0" height="350" scrolling="no" width="100%"></iframe>
+            </div>
+        </div>
+        <div class="span8 our-office" style="margin: auto; float: none; text-align: center; color: #fff;">
+            <h3 style="text-align: center;color: #efe51e;">راه های ارتباط با ما</h3>
+            <hr/>
+        </div>
+    </div>
+    <div class="row" style="adding-left: 30px;margin-top: 50px;color: #fff;">
+        <div class="col-md-4 adress-element  animate fadeInUp">
+            <i class="fa fa-home fa-3x"></i>
+            <h4>آدرس دفتر فروش مرکزی</h4>
+            <span class="font-l">{{ about.sales_office }}</span><br>
+            <span><a href="{{ about.site }}">سایت فروش فرآورده های گوشتی (۸۰۸)</a></span>
+        </div>
+        <div class="col-md-4 adress-element delay2 animate fadeInUp">
+            <i class="fa fa-comment fa-3x"></i>
+            <h4>ایمیل</h4>
+            <span class="font-l">{{ about.email }}</span>
+        </div>
+        <div class="col-md-4 adress-element delay4 animate fadeInUp">
+            <i class="fa fa-phone fa-3x"></i>
+            <h4>تلفن</h4>
+            <span class="font-l">{{ about.tel_2 }} | {{ about.tel_1 }} - 025</span>
+        </div>
+    </div>
+    <div class="row" style="adding-left: 30px;margin-top: 50px;color: #fff;">
+        <div class="col-md-4 adress-element  animate fadeInUp">
+            <i class="fa fa-industry fa-3x"></i>
+            <h4>آدرس کارخانه</h4>
+            <span class="font-l">{{ about.factory_address }}</span>
+        </div>
+        <div class="col-md-4 adress-element delay2 animate fadeInUp">
+            <i class="fa fa-envelope fa-3x"></i>
+            <h4>کد پستی</h4>
+            <span class="font-l">{{ about.postal_code }}</span>
+        </div>
+        <div class="col-md-4 adress-element delay4 animate fadeInUp">
+            <i class="fa fa-fax fa-3x"></i>
+            <h4>فاکس</h4>
+            <span class="font-l">{{ about.fax }}</span>
+        </div>
+    </div>
+{% endblock %}

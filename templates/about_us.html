@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+
+{% block title %}
+    درباره ما
+{% endblock %}
+
+{% block page-header %}
+    درباره ما
+{% endblock %}
+
+{% block about %} active {% endblock %}
+
+{% block content %}
+    <div class="row" style="color: white; direction: rtl;">
+        <div class="span5 goal about-box">
+            <h4 style="color: #efe51e;">اهداف شرکت</h4>
+            {% for goal in goals %}
+                <p><i class="fa fa-check-square-o fa-2x"></i>{{ goal.text }}</p>
+            {% endfor %}
+        </div>
+        <div class="span7 about-box" style="margin-left:40px;direction: rtl;">
+            <h4 style="color: #efe51e;">تاریخچه شرکت</h4>
+            <p>
+                {% autoescape off %}
+                    {{ about.history }}
+                {% endautoescape %}
+            </p>
+        </div>
+        <div class="span12">
+            <hr style="margin-top:100px;"/>
+            <h4 class="about-title">نقاط قوت شرکت</h4>
+        </div>
+        <div class="span12 noghat" style="margin: 30px 30px 0 0;">
+            {% for item in points %}
+                <div class="col-md-4" style="direction: rtl;">
+                    <div class="about-item delay2 animate fadeInUp">
+                        <div class="circle pull-left">
+                            <span>{{ forloop.counter }}</span>
+                        </div>
+                        <p>{{ item.text }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
