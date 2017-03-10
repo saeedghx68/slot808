@@ -69,7 +69,7 @@ def user_login(request):
             message = "لطفا نام کاربری و رمز عبور را درست وارد نمایید."
             return render(request, 'login.html', {'message': message})
     else:
-        return render(request, 'profile/login.html')
+        return render(request, 'login.html')
 
 
 def user_logout(request):
@@ -99,7 +99,7 @@ def get_lattery(request):
                 c['message'] = u'قرعه کشی به پایان رسیده است!'
             else:
                 for award_obj in awards:
-                    if award_obj.min_score < user.score < award_obj.max_score:
+                    if award_obj.min_score <= user.score < award_obj.max_score:
                         award = award_obj
                 if award is None:
                     c['btn_status'] = 'disabled'
@@ -145,7 +145,7 @@ def profile(request):
                 c['message'] = u'قرعه کشی به پایان رسیده است.'
             else:
                 for award_obj in active_awards:
-                    if award_obj.min_score < c['user'].score < award_obj.max_score:
+                    if award_obj.min_score <= c['user'].score < award_obj.max_score:
                         award = award_obj
                 if award is None:
                     c['btn_status'] = 'disabled'
@@ -153,7 +153,7 @@ def profile(request):
 
     except Exception as ex:
         return HttpResponseRedirect('/login/')
-    return render_to_response('profile/profile.html', c)
+    return render_to_response('profile.html', c)
 
 
 @login_required(login_url="/login/")
@@ -169,4 +169,4 @@ def change_password(request):
             c['message'] = u'رمز عبور شما با موفقیت به روز رسانی شد.'
     else:
         c['form'] = PasswordChangeForm(request.user)
-    return render(request, 'profile/changePass.html', c)
+    return render(request, 'changePass.html', c)
