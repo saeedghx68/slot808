@@ -5,13 +5,20 @@
     ارتباط با ما
 {% endblock %}
 
-{% block page-header %}
-    ارتباط با ما
-{% endblock %}
 
 {% block contact %} active {% endblock %}
 
 {% block content %}
+<section class="section-page-header" style="background: url({% static 'bg/bg3.jpg' %});background-size: 100%;height: 300px;padding:0;">
+    <div style="width:100%;height: 100px;position: absolute;top: 120px;background-color:#fff;opacity: 0.8;"></div>
+    <div class="page-header">
+        <h1 style="color:#000;z-index:1000;">ارتباط با ما</h1>
+    </div>
+    </section>
+    <!-- End page header -->
+    <!-- Start portfolio -->
+    <section class="portfolio">
+        <div class="container">
     <div class="row">
         <div class="span12" style="margin-bottom: 30px;">
             <div class="img-polaroid">
@@ -58,4 +65,6 @@
             <span class="font-l">{{ about.fax }}</span>
         </div>
     </div>
+    </div>
+</section>
 {% endblock %}
