@@ -2,144 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0666feb-10d5-4b4e-8948-aa4d95727a83" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/profile/base.html" afterPath="$PROJECT_DIR$/templates/profile-base.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/profile/changePass.html" afterPath="$PROJECT_DIR$/templates/changePass.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/profile/login.html" afterPath="$PROJECT_DIR$/templates/login.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/templates/profile/profile.html" afterPath="$PROJECT_DIR$/templates/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/MOOYAH-Hall-of-Dang-Carousel-Image.jpg" afterPath="$PROJECT_DIR$/static/MOOYAH-Hall-of-Dang-Carousel-Image.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg/bg3.jpg" afterPath="$PROJECT_DIR$/static/bg/bg3.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg/bg6.png" afterPath="$PROJECT_DIR$/static/bg/bg6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg/bg7.jpg" afterPath="$PROJECT_DIR$/static/bg/bg7.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg1.jpg" afterPath="$PROJECT_DIR$/static/bg1.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg100.jpg" afterPath="$PROJECT_DIR$/static/bg100.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg2.jpg" afterPath="$PROJECT_DIR$/static/bg2.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg4.jpg" afterPath="$PROJECT_DIR$/static/bg4.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bg5.png" afterPath="$PROJECT_DIR$/static/bg5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/Sahel-Bold.woff" afterPath="$PROJECT_DIR$/static/fonts/Sahel-Bold.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/Sahel.woff" afterPath="$PROJECT_DIR$/static/fonts/Sahel.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/yekan.eot" afterPath="$PROJECT_DIR$/static/fonts/yekan.eot" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/yekan.ttf" afterPath="$PROJECT_DIR$/static/fonts/yekan.ttf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/fonts/yekan.woff" afterPath="$PROJECT_DIR$/static/fonts/yekan.woff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/808-pack-small.png" afterPath="$PROJECT_DIR$/static/img/808-pack-small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/808-pack01.png" afterPath="$PROJECT_DIR$/static/img/808-pack01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/808-pack02.png" afterPath="$PROJECT_DIR$/static/img/808-pack02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/808-pack03.png" afterPath="$PROJECT_DIR$/static/img/808-pack03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Pickels.png" afterPath="$PROJECT_DIR$/static/img/Pickels.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-01.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-02.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-03.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-04.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-05.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/Tomato/piece-06.png" afterPath="$PROJECT_DIR$/static/img/Tomato/piece-06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/back.jpg" afterPath="$PROJECT_DIR$/static/img/back.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/burger01.png" afterPath="$PROJECT_DIR$/static/img/burger01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/burger03.png" afterPath="$PROJECT_DIR$/static/img/burger03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/burger04.png" afterPath="$PROJECT_DIR$/static/img/burger04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/burger05.png" afterPath="$PROJECT_DIR$/static/img/burger05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/burger06.png" afterPath="$PROJECT_DIR$/static/img/burger06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/cheese.png" afterPath="$PROJECT_DIR$/static/img/cheese.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/divider1.png" afterPath="$PROJECT_DIR$/static/img/divider1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/divider_shadow.png" afterPath="$PROJECT_DIR$/static/img/divider_shadow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/down-bread02.png" afterPath="$PROJECT_DIR$/static/img/down-bread02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fire.gif" afterPath="$PROJECT_DIR$/static/img/fire.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-1.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-2.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-3.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-4.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-4.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-5.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-5.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-6.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-7.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-8.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-8.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/fries/piece-9.png" afterPath="$PROJECT_DIR$/static/img/fries/piece-9.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/go-up.png" afterPath="$PROJECT_DIR$/static/img/go-up.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/img_6.jpg" afterPath="$PROJECT_DIR$/static/img/img_6.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/lettuce.png" afterPath="$PROJECT_DIR$/static/img/lettuce.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/lettuce02.png" afterPath="$PROJECT_DIR$/static/img/lettuce02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/logo.png" afterPath="$PROJECT_DIR$/static/img/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/logo_200.png" afterPath="$PROJECT_DIR$/static/img/logo_200.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/map.png" afterPath="$PROJECT_DIR$/static/img/map.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/multy-user2.png" afterPath="$PROJECT_DIR$/static/img/multy-user2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pattern_08.jpg" afterPath="$PROJECT_DIR$/static/img/pattern_08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-01.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-02.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-03.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-04.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-05.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-06.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-07.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-07.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-08.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-08.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/pepper/piece-09.png" afterPath="$PROJECT_DIR$/static/img/pepper/piece-09.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/btnNext.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/btnPrevious.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/contentPattern.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/contentPattern.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/loader.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_rounded/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/btnNext.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/btnPrevious.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/loader.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/dark_square/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/default_thumb.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/default_thumb.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/loader.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_next.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_next.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_prev.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_prev.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_x.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_x.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_y.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/default/sprite_y.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/btnNext.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/btnPrevious.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternBottom.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternBottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternLeft.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternLeft.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternRight.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternRight.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternTop.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/contentPatternTop.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/default_thumbnail.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/default_thumbnail.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/loader.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/facebook/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/btnNext.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/btnPrevious.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/loader.gif" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/loader.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_rounded/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/btnNext.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/btnNext.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/btnPrevious.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/btnPrevious.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/sprite.png" afterPath="$PROJECT_DIR$/static/img/prettyPhoto/light_square/sprite.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-0/back.jpg" afterPath="$PROJECT_DIR$/static/img/step-0/back.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-0/back.png" afterPath="$PROJECT_DIR$/static/img/step-0/back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-0/burger-tower.png" afterPath="$PROJECT_DIR$/static/img/step-0/burger-tower.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-0/one-pixel.jpg" afterPath="$PROJECT_DIR$/static/img/step-0/one-pixel.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-0/text.png" afterPath="$PROJECT_DIR$/static/img/step-0/text.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/step-6/back.jpg" afterPath="$PROJECT_DIR$/static/img/step-6/back.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/tomato.png" afterPath="$PROJECT_DIR$/static/img/tomato.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/tomato02.png" afterPath="$PROJECT_DIR$/static/img/tomato02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/img/up-bread02.png" afterPath="$PROJECT_DIR$/static/img/up-bread02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/patern.png" afterPath="$PROJECT_DIR$/static/patern.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/patern2.png" afterPath="$PROJECT_DIR$/static/patern2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/js/pages-js/map.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/MOOYAH-Hall-of-Dang-Carousel-Image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bg1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bg2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bg4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/bg5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/patern.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/static/patern2.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/views.py" afterPath="$PROJECT_DIR$/myapp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/animate.css" afterPath="$PROJECT_DIR$/static/css/pages-style/animate.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/static/css/pages-style/bootstrap-responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/bootstrap.css" afterPath="$PROJECT_DIR$/static/css/pages-style/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/font-awesome.css" afterPath="$PROJECT_DIR$/static/css/pages-style/font-awesome.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/prettyPhoto.css" afterPath="$PROJECT_DIR$/static/css/pages-style/prettyPhoto.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myapp/admin.py" afterPath="$PROJECT_DIR$/myapp/admin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/pages-style/style.css" afterPath="$PROJECT_DIR$/static/css/pages-style/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles.css" afterPath="$PROJECT_DIR$/static/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles2.css" afterPath="$PROJECT_DIR$/static/css/styles2.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles3.css" afterPath="$PROJECT_DIR$/static/css/styles3.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/styles4.css" afterPath="$PROJECT_DIR$/static/css/styles4.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/angular.min.js" afterPath="$PROJECT_DIR$/static/js/angular.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/controllers.js" afterPath="$PROJECT_DIR$/static/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/custom-parallax.js" afterPath="$PROJECT_DIR$/static/js/custom-parallax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery-1.12.0.min.js" afterPath="$PROJECT_DIR$/static/js/jquery-1.12.0.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/jquery-2.1.3.js" afterPath="$PROJECT_DIR$/static/js/jquery-2.1.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/js/pages-js/bootstrap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jflickrfeed.min.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jflickrfeed.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery-1.8.3.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery-1.8.3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery.fitvids.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery.fitvids.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery.isotope.min.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery.isotope.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery.onecarousel.min.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery.onecarousel.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery.prettyPhoto.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/pages-js/jquery.tweet.js" afterPath="$PROJECT_DIR$/static/js/pages-js/jquery.tweet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/require.js" afterPath="$PROJECT_DIR$/static/js/require.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/scripts.js" afterPath="$PROJECT_DIR$/static/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/skrollr.js" afterPath="$PROJECT_DIR$/static/js/skrollr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/contact.html" afterPath="$PROJECT_DIR$/templates/contact.html" />
     </list>
     <ignored path="slot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -160,31 +35,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.592592">
+            <state vertical-scroll-proportion="0.0">
               <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/slot/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5059022">
-              <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,27 +59,49 @@
         <entry file="file://$PROJECT_DIR$/myapp/admin.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about_us.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/about_us.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0">
-              <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myapp/models.py">
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+              <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contact.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/contact.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54063606">
+              <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/pages-style/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="1373" column="18" selection-start-line="1373" selection-start-column="18" selection-end-line="1373" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/pages-js/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -271,18 +158,19 @@
         <option value="$PROJECT_DIR$/static/font-awesome/css/font-awesome.css" />
         <option value="$PROJECT_DIR$/static/css/pages-style/font-awesome.css" />
         <option value="$PROJECT_DIR$/static/css/pages-style/bootstrap.css" />
-        <option value="$PROJECT_DIR$/myapp/admin.py" />
         <option value="$PROJECT_DIR$/myapp/models.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/static/css/pages-style/style.css" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/products.html" />
-        <option value="$PROJECT_DIR$/templates/contact.html" />
         <option value="$PROJECT_DIR$/templates/about_us.html" />
         <option value="$PROJECT_DIR$/templates/changePass.html" />
         <option value="$PROJECT_DIR$/templates/profile.html" />
         <option value="$PROJECT_DIR$/myapp/views.py" />
         <option value="$PROJECT_DIR$/slot/settings.py" />
+        <option value="$PROJECT_DIR$/myapp/admin.py" />
+        <option value="$PROJECT_DIR$/static/css/pages-style/style.css" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/static/js/pages-js/map.js" />
+        <option value="$PROJECT_DIR$/templates/contact.html" />
       </list>
     </option>
   </component>
@@ -316,7 +204,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -359,6 +246,100 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages-js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages-style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="slot-808" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="slot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -379,11 +360,12 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/project/slot-808" />
+    <property name="last_opened_file_path" value="$USER_HOME$/project/ideafraz" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="local &#9;ACTION&#9;LocalHistory&#10;local history&#9;null&#9;null&#10;local hi&#9;ACTION&#9;LocalHistory&#10;history&#9;ACTION&#9;LocalHistory" />
   </component>
@@ -563,13 +545,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329582" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -588,50 +570,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/pages-style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1563" column="21" selection-start-line="1563" selection-start-column="21" selection-end-line="1563" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/vendor/xregexp/xregexp.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/vendor/xregexp/LICENSE-XREGEXP.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/cancel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/admin/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/app.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3946037">
@@ -657,13 +595,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="130.06897">
-          <caret line="4" column="48434" selection-start-line="4" selection-start-column="48434" selection-end-line="4" selection-end-column="48434" />
         </state>
       </provider>
     </entry>
@@ -849,7 +780,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="156" column="0" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -857,31 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myapp/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="26" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/pages-style/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="390" column="14" selection-start-line="390" selection-start-column="14" selection-end-line="390" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="34" selection-start-line="47" selection-start-column="34" selection-end-line="47" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -889,27 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#section#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/contact.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="105" selection-start-line="12" selection-start-column="105" selection-end-line="12" selection-end-column="105" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#div#1;n#section#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#h3#0;n#div#1;n#div#0;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#section#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#section#1;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -917,7 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +808,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -933,7 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -941,7 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.0">
           <caret line="32" column="20" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="39" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,13 +829,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="27" selection-start-line="122" selection-start-column="27" selection-end-line="122" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.592592">
+        <state vertical-scroll-proportion="0.0">
           <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
           <folding />
         </state>
@@ -963,9 +842,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/slot/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5059022">
-          <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myapp/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/require.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="331" column="45" selection-start-line="331" selection-start-column="45" selection-end-line="331" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/pages-js/jquery-1.8.3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3487" column="26" selection-start-line="3487" selection-start-column="26" selection-end-line="3487" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22831859">
+          <caret line="4" column="6473" selection-start-line="4" selection-start-column="6473" selection-end-line="4" selection-end-column="6473" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18718381">
+          <caret line="478" column="1" selection-start-line="478" selection-start-column="1" selection-end-line="478" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/urlify.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21753794">
+          <caret line="124" column="22" selection-start-line="124" selection-start-column="22" selection-end-line="124" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="73" column="35" selection-start-line="73" selection-start-column="35" selection-end-line="73" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/pages-js/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/pages-style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1373" column="18" selection-start-line="1373" selection-start-column="18" selection-end-line="1373" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54063606">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#section#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

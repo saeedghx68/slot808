@@ -42,7 +42,7 @@ class GalleryAdmin(admin.ModelAdmin):
     list_filter = ('cat_id',)
 
 
-admin.site.register(Gallery,GalleryAdmin)
+admin.site.register(Gallery, GalleryAdmin)
 admin.site.register(Category)
 admin.site.register_view('user-list', view=view_user_list)
 admin.site.register(User, MyUserAdmin)
