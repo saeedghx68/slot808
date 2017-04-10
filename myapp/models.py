@@ -15,8 +15,8 @@ def _createHash():
 
 class User(AbstractUser):
     username = models.CharField(max_length=10, default=_createHash, verbose_name=u'نام کاربری', unique=True)
-    img = models.ImageField(default='images/gallery/portal2.jpg', upload_to='images/profile/',
-                            verbose_name=u'عکس کاربر')
+    img = models.ImageField(default='images/gallery/user.jpg', upload_to='images/profile/',
+                            verbose_name=u'عکس کاربر', help_text=u'اندازه تصویر: 128 * 128 پیکسل')
     score = models.IntegerField(default=0, verbose_name=u'امتیاز')
     total_spin = models.IntegerField(default=0, verbose_name=u'مجموع چرخش ها')
     win = models.BooleanField(default=False, verbose_name=u'وضعیت برد')
@@ -46,7 +46,7 @@ class Awards(models.Model):
     title = models.CharField(max_length=100, verbose_name=u'عنوان جایزه')
     description = models.TextField(default="", verbose_name=u'توضیحات')
     img = models.ImageField(default='images/gallery/award.jpg', upload_to='images/awards/',
-                            verbose_name=u'تصویر جایزه')
+                            verbose_name=u'تصویر جایزه', help_text=u'اندازه تصویر: 370 * 620 پیکسل')
     min_score = models.IntegerField(verbose_name=u'حداقل امتیاز')
     max_score = models.IntegerField(verbose_name=u'حداکثر امتیاز')
     number = models.IntegerField(verbose_name=u'تعداد نفرات')
@@ -95,8 +95,10 @@ class Category(models.Model):
 
 class Gallery(models.Model):
     cat_id = models.ForeignKey(Category, verbose_name=u'گروه')
-    small_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/', verbose_name=u'تصویر کوچک')
-    large_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/', verbose_name=u'تصویر بزرگ')
+    small_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/',
+                                  verbose_name=u'تصویر کوچک', help_text=u'اندازه تصویر: 300 * 212 پیکسل')
+    large_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/',
+                                  verbose_name=u'تصویر بزرگ')
     alt = models.CharField(default='',max_length=100, verbose_name=u'عنوان')
     upload_date = models.DateTimeField(default=datetime.now, blank=True)
 

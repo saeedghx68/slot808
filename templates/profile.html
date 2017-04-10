@@ -1,4 +1,4 @@
-{% extends "profile/base.html" %}
+{% extends "profile-base.html" %}
 {% load static from staticfiles %}
 
 {% block title %}
@@ -45,7 +45,9 @@
                   <div class="post">
                     <h1>توضیحات :</h1>
                     <p>
+                      {% autoescape off %}
                         {{ lottery.description }}
+                      {% endautoescape %}
                     </p>
                   </div>
 
