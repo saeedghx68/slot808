@@ -4,6 +4,21 @@
 	src: url('../fonts/Sahel.eot');
 	src: url('../fonts/yekan.eot?#iefix') format('embedded-opentype'), url('../fonts/Sahel.woff') format('woff'), url('../fonts/Sahel.ttf') format('truetype');
 }
+@-webkit-keyframes scroll-down {
+	0% { margin-bottom:0px;  }
+	50%  { margin-bottom:15px; }
+    100%   { margin-top:-15px;  }
+}
+@-moz-keyframes scroll-down {
+	0% { margin-bottom:0px;  }
+	50%  { margin-bottom:15px; }
+    100%   { margin-top:-15px;  }
+}
+@keyframes scroll-down {
+	0% { margin-bottom:0px;  }
+	50%  { margin-bottom:15px; }
+    100%   { margin-top:-15px;  }
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -13,6 +28,20 @@ body {
 	background-size: 100% 100%;
 	position: fixed;
 	z-index: 9999;
+	left: 50%;
+	top: 50%;
+	-ms-transform-origin: 50% 0%;
+	-webkit-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#big-pack {
+	background: url("../img/808-big-pack.png") no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	z-index: 9998;
 	left: 50%;
 	top: 50%;
 	-ms-transform-origin: 50% 0%;
@@ -64,29 +93,6 @@ body {
 	position: absolute;
 	z-index: 999;
 }
-.bubbles {
-	display: block;
-	direction: rtl;
-	text-align: center;
-	border-radius: 100%;
-	background: #FFFFFF;
-	position: absolute;
-	font-family: 'Homa';
-	font-size: 2.5vh;
-	box-sizing: border-box;
-	overflow: hidden;
-}
-.bubbles > div {
-	line-height: 150%;
-	margin-left: 16px;
-	margin-right: 16px;
-}
-.bubbles b {
-	line-height: 200%;
-}
-.bubbles p {
-	line-height: 150%;
-}
 .final-pack {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -101,12 +107,25 @@ body {
 
 nav {
 	position: fixed;
-	top: 0;
+	top: 12px;
 	width: 100%;
-	height: 60px;
+	height: 45px;
 	background-color: rgba(0,0,0,0.1);
-	z-index: 9998;
+	z-index: 9999;
 	direction: rtl;
+	background-color: #2e2c2c;
+	text-align: center;
+	box-shadow: 2px 3px 3px #090909;
+}
+
+nav .arrow-down {
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #2e2c2c;
+	position: relative;
+	top: 18px;
 }
 nav ul {
 	list-style-type: none;
@@ -136,7 +155,7 @@ nav ul li a {
 	text-align: center;
 	display: block;
 	height: 100%;
-	line-height: 54px;
+	line-height: 44px;
 }
 /* STEP 0 =================================================================== */
 
@@ -157,7 +176,7 @@ nav ul li a {
 	top: 0px;
 }
 #step-0 > div > .left {
-	background: url("../img/step-0/text.png") no-repeat;
+/*	background: url("../img/step-0/text.png") no-repeat;*/
 	background-size: 100% 100%;
 	display: inline-block;
 	vertical-align: top;
@@ -165,7 +184,7 @@ nav ul li a {
 	left: 5%;
 }
 #step-0 > div > .right {
-	background: url("../img/step-0/burger-tower.png") no-repeat;
+/*	background: url("../img/step-0/burger-tower.png") no-repeat;*/
 	background-size: 100% 100%;
 	display: inline-block;
 	vertical-align: top;
@@ -173,342 +192,125 @@ nav ul li a {
 	right: 0;
 	top: 15%;
 }
-#step-0 > .scroll {
+#step-0 > .scroll-b {
 	background: url("../img/step-0/scroll.png") no-repeat;
 	background-size: 100% 100%;
+	width: 200px;
+	height: 200px;
 	position: absolute;
-	left: 10%;
-	top: 15%;
+	left: 50%;
+	bottom: 20px;
+	-wbekit-transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	-os-transform: translate(-50%,0);
+	transform: translate(-50%,0);
 	-webkit-animation: scroll-down 0.8s linear infinite;
 	animation: scroll-down 0.8s linear infinite;
 }
 /* STEP 1 =================================================================== */
 
 #step-1 {
-	background: #FFF8CC;
-	background: -moz-radial-gradient(center, ellipse cover, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #fff8cc), color-stop(40%, #fff5b4), color-stop(100%, #ffde7d));
-	background: -webkit-radial-gradient(center, ellipse cover, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
-	background: -o-radial-gradient(center, ellipse cover, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
-	background: -ms-radial-gradient(center, ellipse cover, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
-	background: radial-gradient(ellipse at center, #fff8cc 0%, #fff5b4 40%, #ffde7d 100%);
+	background: url(../img/back.jpg);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 #step-1 > .pack {
-	background-image: url("../img/burger01.png");
-}
-#step-1 > .piece-1 {
-	background-image: url("../img/step-1/piece-1.png");
-	left: 5%;
-}
-#step-1 > .piece-2 {
-	background-image: url("../img/step-1/piece-2.png");
-	left: 85%;
-}
-#step-1 > .piece-3 {
-	background-image: url("../img/step-1/piece-3.png");
-	left: -20%;
-}
-#step-1 > .piece-4 {
-	background-image: url("../img/step-1/piece-4.png");
-	left: 57%;
-}
-#step-1 > .piece-5 {
-	background-image: url("../img/step-1/piece-5.png");
-	left: 50%;
-}
-#step-1 > .piece-6 {
-	background-image: url("../img/step-1/piece-6.png");
-	left: 20%;
-}
-#step-1 > .piece-7 {
-	background-image: url("../img/step-1/piece-7.png");
-	left: 70%;
-}
-#step-1 > .piece-8 {
-	background-image: url("../img/step-1/piece-8.png");
-	left: 60%;
-}
-#step-1 > .piece-9 {
-	background-image: url("../img/step-1/piece-9.png");
-	left: 50%;
-	z-index: 980;
-}
-#step-1 > .bubbles b {
-	color: #DA0;
-}
-#step-1 > .text-1 {
-	left: 10%;
-}
-#step-1 > .text-2 {
-	transform: scale(1.5);
-	left: 60%;
-	z-index: 1000;
-	opacity: 0.9;
-}
-#step-1 > .text-3 {
-	transform: scale(1.2);
-	left: 20%;
-	z-index: 990;
-	opacity: 0.95;
+	background-image: url("../img/fired_burger.png");
+	
 }
 /* STEP 2 =================================================================== */
 
 #step-2 {
-	background: #F5A631;
-	background: -moz-radial-gradient(center, ellipse cover, #F5A631 0%, #FF5100 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #F5A631), color-stop(100%, #FF5100));
-	background: -webkit-radial-gradient(center, ellipse cover, #F5A631 0%, #FF5100 100%);
-	background: -o-radial-gradient(center, ellipse cover, #F5A631 0%, #FF5100 100%);
-	background: -ms-radial-gradient(center, ellipse cover, #F5A631 0%, #FF5100 100%);
-	background: radial-gradient(ellipse at center, #F5A631 0%, #FF5100 100%);
+	background-image: url(../img/barbekiu_bg.jpg);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 #step-2 > .pack {
 	background-image: url("../img/burger01.png");
 }
-#step-2 > .fire {
-	background-image: url("../img/fire.gif");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -29%);
-	z-index: 990;
-}
-#step-2 > .piece-1 {
-	background-image: url("../img/flames/01.png");
-	left: 15%;
-}
-#step-2 > .piece-2 {
-	background-image: url("../img/flames/02.png");
-	left: 55%;
-	z-index: 1000;
-}
-#step-2 > .piece-3 {
-	background-image: url("../img/flames/03.png");
-	left: 40%;
-	z-index: 980;
-}
-#step-2 > .piece-4 {
-	background-image: url("../img/flames/04.png");
-	left: 80%;
-}
-#step-2 > .piece-5 {
-	background-image: url("../img/flames/05.png");
-	left: 10%;
-}
-#step-2 > .piece-6 {
-	background-image: url("../img/flames/06.png");
-	left: 60%;
-}
-#step-2 > .piece-7 {
-	background-image: url("../img/flames/07.png");
-	left: 5%;
-}
-#step-2 > .piece-8 {
-	background-image: url("../img/flames/08.png");
-	left: 15%;
-}
-#step-2 > .piece-9 {
-	background-image: url("../img/flames/09.png");
-	left: 90%;
-}
-#step-2 > .piece-10 {
-	background-image: url("../img/flames/07.png");
-	left: 35%;
-}
-#step-2 > .bubbles b {
-	color: #00A000;
-}
-#step-2 > .text-1 {
-	left: 20%;
-}
-#step-2 > .text-2 {
-	transform: scale(1.2);
-	left: 70%;
-	z-index: 1000;
-	opacity: 0.9;
-}
 /* STEP 3 =================================================================== */
 
 #step-3 {
-	background: #FF5100;
-	background: -moz-radial-gradient(center, ellipse cover, #FF5100 0%, #f00 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FF5100), color-stop(100%, #f00));
-	background: -webkit-radial-gradient(center, ellipse cover, #FF5100 0%, #f00 100%);
-	background: -o-radial-gradient(center, ellipse cover, #FF5100 0%, #f00 100%);
-	background: -ms-radial-gradient(center, ellipse cover, #FF5100 0%, #f00 100%);
-	background: radial-gradient(ellipse at center, #FB7A7A 0%, #f00 100%);
+	background: url(../img/back.jpg);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 #step-3 > .pack {
 	background-image: url("../img/burger03.png");
 }
 #step-3 > .piece-1 {
-	background-image: url("../img/pepper/piece-01.png");
+	background-image: url("../img/pepper/piece-02.png");
 	left: 60%;
 }
 #step-3 > .piece-2 {
-	background-image: url("../img/pepper/piece-02.png");
+	background-image: url("../img/pepper/piece-03.png");
 	left: 50%;
 	z-index: 980;
 	-webkit-filter: blur(1px);
 	filter: blur(1px);
 }
 #step-3 > .piece-3 {
-	background-image: url("../img/pepper/piece-03.png");
+	background-image: url("../img/pepper/piece-02.png");
 	left: 80%;
 	z-index: 980;
 	-webkit-filter: blur(1px);
 	filter: blur(1px);
 }
 #step-3 > .piece-4 {
-	background-image: url("../img/pepper/piece-04.png");
+	background-image: url("../img/pepper/piece-03.png");
 	left: 10%;
 }
 #step-3 > .piece-5 {
-	background-image: url("../img/pepper/piece-05.png");
+	background-image: url("../img/pepper/piece-01.png");
 	left: 65%;
 }
 #step-3 > .piece-6 {
-	background-image: url("../img/pepper/piece-06.png");
-	left: 15%;
+	background-image: url("../img/pepper/piece-05.png");
+	left: 0%;
+	filter: blur(2px);
 }
 #step-3 > .piece-7 {
-	background-image: url("../img/pepper/piece-07.png");
-	left: 80%;
+	background-image: url("../img/pepper/piece-01.png");
+	left: 90%;
 }
 #step-3 > .piece-8 {
-	background-image: url("../img/pepper/piece-08.png");
+	background-image: url("../img/pepper/piece-04.png");
 	left: 60%;
 	z-index: 980;
 }
 #step-3 > .piece-9 {
-	background-image: url("../img/pepper/piece-09.png");
+	background-image: url("../img/pepper/piece-02.png");
 	left: 30%;
 	-webkit-filter: blur(1px);
 	filter: blur(1px);
 }
 #step-3 > .piece-10 {
-	background-image: url("../img/pepper/piece-05.png");
-	left: 10%;
+	background-image: url("../img/pepper/piece-03.png");
+	left: 75%;
 }
 #step-3 > .piece-11 {
 	background-image: url("../img/pepper/piece-02.png");
-	left: 25%;
-}
-#step-3 > .lettuce {
-	background-image: url("../img/lettuce.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
-	z-index: 991;
-}
-#step-3 > .lettuce-2 {
-	background-image: url("../img/lettuce02.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
-	z-index: 992;
-}
-#step-3 > .cheese {
-	background-image: url("../img/cheese.png");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, 0);
-	z-index: 993;
-}
-#step-3 > .bubbles b {
-	color: #E0A000;
-}
-#step-3 > .text-1 {
-	transform: scale(1.1);
-	left: 80%;
-}
-#step-3 > .text-2 {
-	transform: scale(1.2);
 	left: 15%;
-	z-index: 1000;
-	opacity: 0.9;
+}
+
+#step-3 > .d-bread {
+	background-image: url("../img/down-bread02.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 10;
 }
 /* STEP 4 =================================================================== */
 
 #step-4 {
-	background: #FFF0C0;
-	background: -moz-radial-gradient(center, ellipse cover, #FFC0D2 0%, #FF003F 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFC0D2), color-stop(100%, #FF003F));
-	background: -webkit-radial-gradient(ellipse at center, #FFC0D2 0%, #FF003F 100%);
-	background: -o-radial-gradient(ellipse at center, #FFC0D2 0%, #FF003F 100%);
-	background: -ms-radial-gradient(ellipse at center, #FFC0D2 0%, #FF003F 100%);
-	background: radial-gradient(ellipse at center, #FFC0D2 0%, #FF003F 100%);
+	background: url(../img/back.jpg);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 #step-4 > .pack {
 	background-image: url("../img/burger04.png");
-}
-#step-4 > .piece-1 {
-	background-image: url("../img/Tomato/piece-01.png");
-	left: 60%;
-}
-#step-4 > .piece-2 {
-	background-image: url("../img/Tomato/piece-02.png");
-	left: 50%;
-	z-index: 980;
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
-}
-#step-4 > .piece-3 {
-	background-image: url("../img/Tomato/piece-03.png");
-	left: 80%;
-	z-index: 980;
-}
-#step-4 > .piece-4 {
-	background-image: url("../img/Tomato/piece-04.png");
-	left: 10%;
-}
-#step-4 > .piece-5 {
-	background-image: url("../img/Tomato/piece-05.png");
-	left: 65%;
-	z-index: 980;
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
-}
-#step-4 > .piece-6 {
-	background-image: url("../img/Tomato/piece-06.png");
-	left: 3%;
-}
-#step-4 > .piece-7 {
-	background-image: url("../img/Tomato/piece-02.png");
-	left: 30%;
-}
-#step-4 > .piece-8 {
-	background-image: url("../img/Tomato/piece-03.png");
-	left: 50%;
-	z-index: 980;
-}
-#step-4 > .piece-9 {
-	background-image: url("../img/Tomato/piece-04.png");
-	left: 29%;
-}
-#step-4 > .piece-10 {
-	background-image: url("../img/Tomato/piece-05.png");
-	left: 80%;
-	z-index: 980;
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
-}
-#step-4 > .piece-11 {
-	background-image: url("../img/Tomato/piece-06.png");
-	left: 80%;
 }
 #step-4 > .tomato-2 {
 	background-image: url("../img/tomato02.png");
@@ -517,7 +319,7 @@ nav ul li a {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
-	z-index: 992;
+	z-index: 998;
 }
 #step-4 > .tomato {
 	background-image: url("../img/tomato.png");
@@ -526,81 +328,53 @@ nav ul li a {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
-	z-index: 991;
+	z-index: 997;
 }
-#step-4 > .bubbles b {
-	color: #E0A000;
-}
-#step-4 > .text-1 {
-	transform: scale(1.1);
-	left: 80%;
-}
-#step-4 > .text-2 {
-	transform: scale(1.2);
-	left: 15%;
-	z-index: 1000;
-	opacity: 0.9;
-}
-/* STEP 5 =================================================================== */
-
-#step-5 {
-	background: #FF5100;
-	background: -moz-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #FFF0C0), color-stop(100%, #FFC000));
-	background: -webkit-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
-	background: -o-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
-	background: -ms-radial-gradient(center, ellipse cover, #FFF0C0 0%, #FFC000 100%);
-	background: radial-gradient(ellipse at center, #FFF0C0 0%, #FFC000 100%);
-	background-attachment: fixed;
-}
-#step-5 > .pack {
-	background-image: url("../img/burger05.png");
-}
-#step-5 > .piece-1 {
-	background-image: url("../img/fries/piece-1.png");
-	left: 5%;
-}
-#step-5 > .piece-2 {
-	background-image: url("../img/fries/piece-2.png");
-	left: 85%;
-}
-#step-5 > .piece-3 {
-	background-image: url("../img/fries/piece-3.png");
-	left: -20%;
-}
-#step-5 > .piece-4 {
-	background-image: url("../img/fries/piece-4.png");
-	left: 57%;
-}
-#step-5 > .piece-5 {
-	background-image: url("../img/fries/piece-5.png");
-	left: 50%;
-}
-#step-5 > .piece-6 {
-	background-image: url("../img/fries/piece-6.png");
-	left: 20%;
-}
-#step-5 > .piece-7 {
-	background-image: url("../img/fries/piece-7.png");
-	left: 70%;
-}
-#step-5 > .piece-8 {
-	background-image: url("../img/fries/piece-8.png");
-	left: 60%;
-}
-#step-5 > .piece-9 {
-	background-image: url("../img/fries/piece-9.png");
-	left: 50%;
-	z-index: 980;
-}
-#step-5 > .d-bread {
-	background-image: url("../img/down-bread02.png");
+#step-4 > .lettuce {
+	background-image: url("../img/lettuce.png");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%, 0);
-	z-index: 10;
+	z-index: 995;
+}
+#step-4 > .lettuce-2 {
+	background-image: url("../img/lettuce02.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 994;
+}
+#step-4 > .cheese {
+	background-image: url("../img/cheese.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 993;
+}
+#step-4 > .cheese-2 {
+	background-image: url("../img/cheese02.png");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 996;
+}
+/* STEP 5 =================================================================== */
+
+#step-5 {
+	background: url(../img/back.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+#step-5 > .pack {
+	background-image: url("../img/burger05.png");
 }
 #step-5 > .t-bread {
 	background-image: url("../img/up-bread02.png");
@@ -627,12 +401,12 @@ nav ul li a {
 /* STEP 6 =================================================================== */
 
 #step-6 {
-	background: url("../img/step-6/back.jpg") center bottom no-repeat;
-	background-size: 100% auto;
+	background-image:url(../img/back_final.jpg);
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 #step-6 > .pack {
-	background-image: url("../img/burger06.png");
+	background-image: url("../img/../img/808-big-pack.png");
 }
 #step-6 > .final-pack {
 	-moz-transform-origin: 50% 100%;
@@ -645,7 +419,7 @@ nav ul li a {
 	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=0, Color='#404040')";
 }
 #step-6 > .pack-1 {
-	background-image: url("../img/step-6/pack-5.png");
+	background-image: url("../img/808-pack0.png");
 	left: 15%;
 	z-index: 100;
 	transform: scale(0.90);
@@ -657,46 +431,16 @@ nav ul li a {
 	transform: scale(0.95);
 }
 #step-6 > .pack-3 {
-	background-image: url("../img/burger_full1.png");
-	left: 30%;
-	z-index: 200;
+	background-image: url("../img/808-pack03.png");
+	left: 50%;
+	z-index: 150;
+	transform: translate(-50%,0) scale(0.95);
 }
 #step-6 > .pack-4 {
-	background-image: url("../img/808-pack03.png");
+	background-image: url("../img/808-pack02.png");
 	left: 60%;
 	z-index: 150;
 	transform: scale(0.95);
-}
-#step-6 > .pack-5 {
-	background-image: url("../img/step-6/pack-2.png");
-	left: 55%;
-	z-index: 100;
-	transform: scale(0.90);
-}
-#step-6 > .text-1 {
-	position: absolute;
-	top: 10%;
-	right: 10%;
-	font-family: 'Fateme';
-	font-size: 500%;
-	color: #FFC040;
-	direction: rtl;
-	text-shadow: 1px 1px 0px #000000, 1px -1px 0px #000000, -1px 1px 0px #000000, -1px -1px 0px #000000;
-	-moz-transform: rotate(-10deg);
-	-webkit-transform: rotate(-10deg);
-	transform: rotate(-10deg);
-}
-#step-6 > .text-2 {
-	position: absolute;
-	top: 22%;
-	right: 10%;
-	font-family: 'AguafinaScript';
-	font-size: 350%;
-	color: #FFC040;
-	text-shadow: 1px 1px 0px #000000, -1px -1px 0px #000000, 1px -1px 0px #000000, -1px 1px 0px #000000;
-	-moz-transform: rotate(-10deg);
-	-webkit-transform: rotate(-10deg);
-	transform: rotate(-10deg);
 }
 footer {
 	position: absolute;
