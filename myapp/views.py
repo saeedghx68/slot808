@@ -18,7 +18,12 @@ User = get_user_model()
 
 
 def home(request):
-    return render_to_response('index.html')
+    c = {}
+    try:
+        c['news'] = News.objects.order_by('-date').first()
+    except:
+        c['news'] = u'خبری وجود ندارد!'
+    return render_to_response('index.html', c)
 
 
 def products(request):

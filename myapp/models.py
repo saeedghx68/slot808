@@ -29,6 +29,9 @@ class User(AbstractUser):
         verbose_name_plural = u'کاربران'
 
 
+# ****************Declare user model
+
+
 class Lottery(models.Model):
     title = models.CharField(max_length=100, verbose_name=u'عنوان قرعه کشی')
     description = models.TextField(default="", verbose_name=u'توضیحات')
@@ -40,6 +43,9 @@ class Lottery(models.Model):
     class Meta:
         verbose_name = u'قرعه کشی'
         verbose_name_plural = u'قرعه کشی ها'
+
+
+# ****************Declare lottery model
 
 
 class Awards(models.Model):
@@ -60,6 +66,9 @@ class Awards(models.Model):
         verbose_name_plural = u'جوایز'
 
 
+# ****************Declare awards model
+
+
 class UserAwards(models.Model):
     user = models.ForeignKey(User, verbose_name=u'کاربر', related_name='user')
     award = models.ForeignKey(Awards, verbose_name=u'جایزه', related_name='award')
@@ -71,7 +80,8 @@ class UserAwards(models.Model):
         verbose_name = u'برنده'
         verbose_name_plural = u'برنده ها'
 
-# ****************Declare gallery model
+
+# ****************Declare user-awards model
 
 
 class Category(models.Model):
@@ -80,9 +90,9 @@ class Category(models.Model):
 
     def as_json(self):
         return {
-                'id': self.id - 1,
-                'name': self.name,
-                }
+            'id': self.id - 1,
+            'name': self.name,
+        }
 
     def __unicode__(self):
         return self.name
@@ -93,22 +103,25 @@ class Category(models.Model):
         verbose_name_plural = u'دسته بندی محصولات'
 
 
+# ****************Declare product category model
+
+
 class Gallery(models.Model):
     cat_id = models.ForeignKey(Category, verbose_name=u'گروه')
     small_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/',
                                   verbose_name=u'تصویر کوچک', help_text=u'اندازه تصویر: 300 * 212 پیکسل')
     large_img = models.ImageField(default='images/gallery/defaults.jpg', upload_to='images/gallery/',
                                   verbose_name=u'تصویر بزرگ')
-    alt = models.CharField(default='',max_length=100, verbose_name=u'عنوان')
+    alt = models.CharField(default='', max_length=100, verbose_name=u'عنوان')
     upload_date = models.DateTimeField(default=datetime.now, blank=True)
 
     def as_json(self):
         return {
-                'id':self.id - 1,
-                'imgs': str(self.small_img),
-                'imgl': str(self.large_img),
-                'alt': self.alt,
-                }
+            'id': self.id - 1,
+            'imgs': str(self.small_img),
+            'imgl': str(self.large_img),
+            'alt': self.alt,
+        }
 
     def __unicode__(self):
         return self.alt
@@ -117,6 +130,8 @@ class Gallery(models.Model):
         ordering = ['upload_date']
         verbose_name = u'گالری محصولات'
         verbose_name_plural = u'گالری محصولات'
+
+
 # *****************End of gallery model
 
 
@@ -136,6 +151,9 @@ class About(models.Model):
         verbose_name_plural = u'درباره ما'
 
 
+# ****************Declare about model
+
+
 class Points(models.Model):
     text = models.CharField(max_length=350, verbose_name=u'متن')
 
@@ -147,6 +165,9 @@ class Points(models.Model):
         verbose_name_plural = u'نقاط قوت شرکت'
 
 
+# ****************Declare point model
+
+
 class Goals(models.Model):
     text = models.CharField(max_length=350, verbose_name=u'متن')
 
@@ -156,3 +177,24 @@ class Goals(models.Model):
     class Meta:
         verbose_name = u'هدف شرکت'
         verbose_name_plural = u'اهداف شرکت'
+
+
+# ****************Declare goals model
+
+
+class News(models.Model):
+    title = models.CharField(max_length=25, verbose_name=u'عنوان خبر', default="")
+    img = models.ImageField(upload_to='images/news/', verbose_name=u'ﺖﺻﻭیﺭ',
+                            help_text='size(100px * 100px)')
+    summary = models.CharField(max_length=250, verbose_name=u'خلاصه خبر', help_text=u'حداکثر ۲۲۰ کاراکتر')
+    date = models.DateTimeField(auto_now_add=True)
+
+    def __unicode__(self):
+        return self.title
+
+    class Meta:
+        ordering = ['date']
+        verbose_name = u'خبر'
+        verbose_name_plural = u'اخبار'
+
+# ****************Declare news model
