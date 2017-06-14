@@ -113,7 +113,13 @@ def get_lattery(request):
                     c['secondWheel'] = randint(0, 9)
                     c['firstWheel'] = randint(0, 9)
                     c['thirdWheel'] = randint(0, 9)
-                    if c['firstWheel'] == c['secondWheel'] == c['thirdWheel']:
+                    if (c['firstWheel'] == c['secondWheel']) or (c['secondWheel'] == c['thirdWheel']) or (
+                                c['firstWheel'] == c['thirdWheel']):
+                        user.total_spin += 1
+                        user.save()
+
+                    if (c['firstWheel'] == c['secondWheel'] == c['thirdWheel']) or (
+                                user.total_spin >= user.chance_of_gift):
                         UserAwards(user=user, award=award).save()
                         award.number -= 1
                         award.save(update_fields=["number"])
@@ -121,8 +127,9 @@ def get_lattery(request):
                             award.active = False
                             award.save(update_fields=["active"])
                         user.win = True
+                        user.total_spin = 0
                         user.save()
-                        c['message'] = ' تبریک! شما برنده شدید :)'
+                        c['message'] = ' تبریک! شما برنده {0} شدید :)'.format(award.title)
                     else:
                         c['message'] = 'شما برنده نشدید! مجددا تلاش کنید...'
     except Exception as ex:

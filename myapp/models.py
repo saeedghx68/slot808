@@ -18,8 +18,9 @@ class User(AbstractUser):
     img = models.ImageField(default='images/gallery/user.jpg', upload_to='images/profile/',
                             verbose_name=u'عکس کاربر', help_text=u'اندازه تصویر: 128 * 128 پیکسل')
     score = models.IntegerField(default=0, verbose_name=u'امتیاز')
-    total_spin = models.IntegerField(default=0, verbose_name=u'مجموع چرخش ها')
     win = models.BooleanField(default=False, verbose_name=u'وضعیت برد')
+    total_spin = models.IntegerField(default=0, verbose_name=u'تعداد دفعات برابر شدن دو عدد از سه عدد')
+    chance_of_gift = models.IntegerField(default=10, verbose_name=u'شانس جایزه', help_text=u'تعداد دفعاتی که لازم است دو عدد از سه عدد برابر شود تا کاربر برنده شود')
 
     def __unicode__(self):
         return self.username
@@ -188,6 +189,7 @@ class News(models.Model):
                             help_text='size(100px * 100px)')
     summary = models.CharField(max_length=250, verbose_name=u'خلاصه خبر', help_text=u'حداکثر ۲۲۰ کاراکتر')
     date = models.DateTimeField(auto_now_add=True)
+    state = models.BooleanField(default=False, verbose_name=u'وضعیت نمایش', help_text=u'در صورتی که تمایل دارید این خبر در صفحه اصلی نشان داده شود این گزینه را فعال کنید')
 
     def __unicode__(self):
         return self.title

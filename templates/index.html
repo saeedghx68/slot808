@@ -30,16 +30,18 @@
 <!--			<div id="logo" size="500x284" data-start="transform:translate(-50%,-50%) scale(1,1); left:50%;top:50%;" data-_key1="transform:translate(0,0) scale(0.5,0.5); left:1%;top:2%;" ></div>-->
 
 			<!-- news box -->
-			<div id="box">
-				<span onclick="document.getElementById('box').style.display='none'">&times;</span>
-				<div class="octo">
-				  <div class="octo1">
-					<img src='/media/{{ news.img }}' alt="{{ news.title }}" />
-				  </div>
+			{% if news.state %}
+				<div id="box">
+					<span onclick="document.getElementById('box').style.display='none'">&times;</span>
+					<div class="octo">
+					  <div class="octo1">
+						<img src='/media/{{ news.img }}' alt="{{ news.title }}" />
+					  </div>
+					</div>
+					<h3>{{ news.title }}</h3>
+					<p>{{ news.summary }}</p>
 				</div>
-				<h3>{{ news.title }}</h3>
-				<p>{{ news.summary }}</p>
-			</div>
+			{% endif %}
 			<!-- end news box -->
 
 			<div id="big-pack" size="500x500" data-start="top:50%" data-_key1="top:80%" ></div>

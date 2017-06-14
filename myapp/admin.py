@@ -17,7 +17,7 @@ class MyUserForm(UserChangeForm):
 class MyUserAdmin(UserAdmin):
     form = MyUserForm
     fieldsets = UserAdmin.fieldsets + (
-        ('Additional Info', {'fields': ('img', 'score', 'win')}),
+        ('Additional Info', {'fields': ('img', 'score', 'win', 'chance_of_gift', )}),
     )
     # readonly_fields = ('username', )
 
