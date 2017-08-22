@@ -7,7 +7,7 @@ pip install virtualenv
 virualenv env
 ```
 And then execute
-```And then execute:
+```python
 source env/bin/activate
 cd govarab
 pip install -r req.txt
