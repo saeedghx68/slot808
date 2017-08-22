@@ -6,7 +6,7 @@ Desc
 pip install virtualenv
 virualenv env
 ```
-
+And then execute
 ```And then execute:
 source env/bin/activate
 cd govarab
